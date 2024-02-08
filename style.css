@@ -9,7 +9,8 @@ html {
 }
 
 body {
-  width: 100%;
+  width: 100vw;
+  overflow-x: hidden;
   height: 100%;
   font-size: 16px;
   font-family: "Inter", sans-serif;
@@ -247,8 +248,8 @@ video {
 
 .pageSection {
   width: 100%;
-  padding: 4rem 2rem;
-  margin: 4rem 0rem;
+  padding: 4rem 1rem;
+  margin: 0rem;
 }
 
 .sectionPara {
@@ -283,6 +284,10 @@ video {
 .mainTitle {
   font-size: 4.25rem;
   font-weight: 700;
+
+  transform: translateY(150px);
+  opacity: 0;
+  animation: text-reveal forwards 0.75s ease-in-out;
 }
 
 .heroSpecialText {
@@ -293,6 +298,9 @@ video {
 
 .heroPara {
   max-width: 400px;
+  transform: translateY(150px);
+  opacity: 0;
+  animation: text-reveal forwards 0.75s ease-in-out 0.25s;
 }
 
 .heroBtn {
@@ -301,6 +309,9 @@ video {
   font-weight: 500;
   letter-spacing: 1px;
   font-size: 1rem;
+  transform: translateY(150px);
+  opacity: 0;
+  animation: text-reveal forwards 0.75s ease-in-out 0.5s;
 }
 
 .heroImgContainer {
@@ -311,6 +322,20 @@ video {
   background-image: url("images/reed-trilogy.jpeg");
   background-size: cover;
   background-position: center;
+  transform: scale(1.5) translateY(200px);
+  opacity: 0;
+  animation: hero-reveal forwards 1.25s ease-in-out 0.5s;
+}
+
+@keyframes hero-reveal {
+  0% {
+    transform: scale(1.5) translateY(200px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 /*purpose section */
@@ -429,6 +454,9 @@ video {
   aspect-ratio: 4 / 5;
   border-radius: 1rem;
   background-color: var(--form-light-gray);
+  background-image: url("images/trilogy-camp-group.jpeg");
+  background-size: cover;
+  background-position: center;
   width: 100%;
 }
 
@@ -468,12 +496,15 @@ video {
 }
 
 .ctaSection {
+  background-color: var(--accent-color);
+  color: var(--primary-light-mode);
   position: relative;
   padding: 8rem 4rem;
   width: 100%;
   max-width: 1500px;
   align-items: center;
   justify-items: center;
+  border-radius: 0rem;
 }
 
 .ctaSection .copyContainer {
@@ -483,16 +514,27 @@ video {
   align-items: center;
 }
 
+.ctaSection .sectionTitle {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.ctaSection .copyContainer .ctaSpecial {
+  font-style: italic;
+  font-weight: 500;
+}
+
 .ctaSection .copyContainer button {
   margin: 2rem 0rem;
   max-width: 500px;
   width: 100%;
   align-self: center;
+  background-color: var(--primary-dark-mode);
 }
 
 .mainFooter {
   width: 100%;
-  padding: 4rem 2rem;
+  padding: 2rem 1rem;
   background-color: var(--secondary-light-mode);
   color: var(--primary-light-mode);
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -508,7 +550,7 @@ video {
 }
 
 .logoFooterImg {
-  width: 375px;
+  width: 300px;
 }
 
 .subscribeFooterContainer {
@@ -590,8 +632,8 @@ video {
 }
 
 .highLeft {
-  width: 600px;
-  height: 500px;
+  width: 300px;
+  height: 250px;
   transform: rotateX("25");
   top: 45%;
   left: -10%;
@@ -599,8 +641,8 @@ video {
 }
 
 .highRight {
-  width: 600px;
-  height: 500px;
+  width: 300px;
+  height: 250px;
   transform: rotateX("-25");
   top: 45%;
   right: -15%;
@@ -608,23 +650,38 @@ video {
 }
 
 .mediumRight {
-  width: 500px;
-  height: 700px;
+  width: 300px;
+  height: 400px;
   transform: rotateX("-2");
   filter: blur(140px);
-  top: 250%;
+  top: 200%;
   right: -15%;
   display: block;
 }
 
 .lowLeft {
-  width: 500px;
-  height: 500px;
+  width: 300px;
+  height: 400px;
   transform: rotateX("-25");
   bottom: -25%;
   left: -15%;
-  display: block;
+  display: none;
   z-index: -1;
+}
+
+/* animations */
+@keyframes text-reveal {
+  0% {
+    opacity: 0;
+    transform: translateY(150px);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 @media only screen and (min-width: 700px) {
@@ -634,9 +691,26 @@ video {
     row-gap: 1rem;
     text-align: left;
   }
+
+  /* main section */
+  .mainSection {
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
+  }
+
+  .pageSection {
+    width: 100%;
+    padding: 4rem 2rem;
+    margin: 2rem 0rem 0rem;
+  }
 }
 
 @media only screen and (min-width: 800px) {
+  .homeMain {
+    row-gap: 12rem;
+  }
+
   .navList {
     display: flex;
     align-items: center;
@@ -755,9 +829,37 @@ video {
     box-shadow: 0px 4px 12px rgba(192, 192, 192, 0.5);
   }
 
+  .ctaSection {
+    background-color: var(--accent-color);
+    color: var(--primary-light-mode);
+    position: relative;
+    padding: 10rem 4rem;
+    width: 100%;
+    max-width: 1500px;
+    align-items: center;
+    justify-items: center;
+    border-radius: 0rem;
+    margin-top: 4rem;
+  }
+
+  .ctaSection .sectionTitle {
+    font-size: 2.75rem;
+  }
+
+  .ctaSection .copyContainer {
+    max-width: 600px;
+  }
+
+  .ctaSection button {
+    height: 80px;
+    max-height: 84px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+
   .mainFooter {
     width: 100%;
-    padding: 4rem 2rem;
+    padding: 8rem 2rem;
     background-color: var(--secondary-light-mode);
     color: var(--primary-light-mode);
     grid-template-columns: 1fr 1fr;
@@ -777,6 +879,63 @@ video {
 
   .subscribeFooterContainer .sectionPara {
     max-width: 400px;
+  }
+
+  /*Decorative splashes*/
+
+  .decorativeSplash {
+    position: absolute;
+    display: block;
+    display: none;
+    width: 760px;
+    height: 575px;
+    border-radius: 140px;
+    filter: blur(100px);
+    background-color: #038ddb;
+    background-image: linear-gradient(
+      to bottom,
+      var(--splash-light-first-color),
+      var(--splash-ligh-second-color)
+    );
+    z-index: -1;
+  }
+
+  .highLeft {
+    width: 600px;
+    height: 500px;
+    transform: rotateX("25");
+    top: 45%;
+    left: -10%;
+    display: block;
+  }
+
+  .highRight {
+    width: 600px;
+    height: 500px;
+    transform: rotateX("-25");
+    top: 45%;
+    right: -15%;
+    display: block;
+  }
+
+  .mediumRight {
+    width: 500px;
+    height: 700px;
+    transform: rotateX("-2");
+    filter: blur(140px);
+    top: 250%;
+    right: -15%;
+    display: block;
+  }
+
+  .lowLeft {
+    width: 500px;
+    height: 500px;
+    transform: rotateX("-25");
+    bottom: -25%;
+    left: -15%;
+    display: none;
+    z-index: -1;
   }
 }
 
@@ -800,7 +959,7 @@ video {
   }
 
   .qualitySection .imageContainer {
-    max-width: 450px;
+    max-width: 600px;
   }
 }
 
@@ -813,5 +972,26 @@ video {
     grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
     grid-gap: 2rem;
     align-items: center;
+  }
+
+  .heroImgContainer {
+    max-width: 900px;
+  }
+
+  .mainTitle {
+    font-size: 6.5rem;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .mainSection {
+    margin-top: 0rem;
+    margin-bottom: 4rem;
+  }
+
+  .ctaSection {
+    margin-top: 4rem;
+    border-radius: 2rem;
+    justify-self: center;
   }
 }
