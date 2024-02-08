@@ -4,10 +4,117 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <!-- Box Icon Link -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,500;0,700;0,900;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <title>Trilogy Soccer | Santa Clarita's Best Soccer Training</title>
   </head>
   <body>
-    <header class="mainHeader homeHeader flex"></header>
-    <main class="mainSection grid homeMain">Hello World</main>
+    <header class="mainHeader homeHeader flex">
+      <span class="logoContainer flex">
+        <a class="headerLink logoLink flex" href="index.html">
+          <img
+            class="logoImg"
+            title="Trilogy Soccer"
+            alt="Trilogy Soccer Logo"
+            src="images/trilogy logo soccer training logo transparent.png"
+          />
+        </a>
+      </span>
+      <nav class="mainNav flex">
+        <ul class="navList desktopNavList flex noList">
+          <li class="navLi flex desktopLi">
+            <a href="#" class="navLink flex">Training Services</a>
+          </li>
+          <li class="navLi flex desktopLi">
+            <a href="#" class="navLink flex">Pricing & Plans</a>
+          </li>
+          <li class="navLi flex desktopLi">
+            <a href="#" class="navLink flex">About Us</a>
+          </li>
+          <li class="navLi flex desktopLi">
+            <a href="#" class="navLink flex">Contact Us</a>
+          </li>
+        </ul>
+        <span class="bookingBtnContainer flex">
+          <button class="pageBtn bookingBtn secondaryBtn">Booking Page</button>
+        </span>
+        <span class="mobileMenuContainer flex" id="menuOpenBtn">
+          <i class="bx bx-menu"></i>
+        </span>
+      </nav>
+      <div class="mobileMenu" id="mobileMenu">
+        <nav class="mobileNav flexColumn">
+          <div class="closeContainer flex" id="closeMenuBtn">
+            <i class="bx bx-arrow-back"></i>
+          </div>
+          <ul class="mobileNavList noList flexColumn">
+            <li class="navLi flex mobileLi">
+              <a href="#" class="navLink flex">Training Services</a>
+            </li>
+            <li class="navLi flex mobileLi">
+              <a href="#" class="navLink flex">Pricing & Plans</a>
+            </li>
+            <li class="navLi flex mobileLi">
+              <a href="#" class="navLink flex">About Us</a>
+            </li>
+            <li class="navLi flex mobileLi">
+              <a href="#" class="navLink flex">Contact Us</a>
+            </li>
+          </ul>
+          <span class="mobileBookingContainer flex">
+            <button class="pageBtn bookingBtn secondaryBtn">
+              Booking Page
+            </button>
+          </span>
+        </nav>
+      </div>
+    </header>
+    <main class="mainSection grid homeMain">
+      <section class="heroSection pageSection grid" id="heroSection">
+        <div class="heroCopyContainer flexColumn">
+          <h1 class="heroTitle mainTitle">
+            Take your game to the
+            <span class="specialTextHeading heroSpecialText">next level</span>.
+          </h1>
+          <p class="sectionPara heroPara">
+            The best soccer training in Santa Clarita. Providing quality
+            training that gets you ahead and keeps you ahead. Click on the
+            button to start your journey with us today!
+          </p>
+          <button class="pageBtn primaryBtn heroBtn">Start here</button>
+        </div>
+        <div class="heroImgContainer"></div>
+      </section>
+      <section class="pageSection grid purposeSection">
+        <div class="copyContainer flexColumn">
+          <h2 class="sectionTitle">
+            Soccer Training with a
+            <span class="sepcialTextHeading specialTitleColor">Purpose</span>.
+          </h2>
+          <p class="sectionPara">
+            Develop the right way, with quality training that focuses on all
+            aspects of the game. Our focus is on developing quality individual
+            soccer athletes with the vision to play at the highest of levels.
+            From weekly group training to exclusive training programs and camps,
+            Trilogy Soccer is the all inclusive extra-training service that will
+            take your game to new heights. If you’re looking for the right
+            guidance to making it far, you’ve come to the right place.
+          </p>
+        </div>
+        <div class="mediaContainer purposeMediaContainer"></div>
+      </section>
+      <section class="pageSection grid year-roundSection"></section>
+    </main>
+    <script src="script.js"></script>
   </body>
 </html>

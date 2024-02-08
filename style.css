@@ -11,4 +11,446 @@ html {
 body {
   width: 100%;
   height: 100%;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+button {
+  font-family: "Inter", sans-serif;
+  font-family: "Inter Tight", sans-serif;
+}
+
+:root {
+  /* colors */
+  /* color scheme light mode*/
+  --primary-light-mode: #ffff;
+  --secondary-light-mode: #000;
+  --secondary-300-ligh-mode: #181818;
+  --light-shadow: #c0c0c0;
+  /* neutrals */
+  --accent-color: #038ddb;
+  --neutral-gray: #d9d9d9;
+  --form-light-gray: #898989;
+  /* dark mode color scheme */
+  --primary-dark-mode: #151616;
+  --secondary-dark-mode: #ffff;
+  --block-dark-bkg: #1c1c1d;
+  --dark-shadow: #0000;
+}
+
+/* buttons */
+button {
+  box-shadow: none;
+  border: none;
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 150px;
+  min-height: 48px;
+  max-width: 300px;
+  max-height: 64px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  font-size: 0.75rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.primaryBtn {
+  background-color: var(--accent-color);
+  color: var(--primary-light-mode);
+}
+
+.primaryBtn:hover,
+.primaryBtn:focus {
+  background-color: hsl(202, 100%, 30%);
+}
+
+.secondaryBtn {
+  background-color: var(--primary-light-mode);
+  border: 1px solid var(--secondary-light-mode);
+  color: var(--secondary-light-mode);
+}
+
+.secondaryBtn:hover,
+.secondaryBtn:focus {
+  background-color: hsl(0, 0%, 80%);
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.noList {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited,
+a:hover,
+a:focus,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+img,
+svg,
+video {
+  max-width: 100%;
+}
+
+/* MOBILE STYLING --- STYLING FOR DEVICES LESS THAN 400PX */
+/* header styling */
+.mainHeader {
+  width: 100%;
+  max-width: 1600px;
+  height: 80px;
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+}
+
+.logoContainer {
+  height: 100%;
+  width: 72px;
+  padding-right: 1rem;
+}
+
+.logoImg {
+  height: 90%;
+}
+
+.mainNav {
+  align-items: center;
+  height: 100%;
+  padding-left: 1rem;
+  column-gap: 1.25rem;
+}
+
+.navList {
+  display: none;
+  column-gap: 0.5rem;
+  height: 100%;
+  font-size: 0.95rem;
+}
+
+.bookingBtnContainer {
+  display: none;
+}
+
+.mobileMenuContainer {
+  font-size: 2.5rem;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* mobile Menu Fixed Styling */
+.mobileMenu {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 275px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 1rem 2rem;
+  background-color: var(--secondary-300-ligh-mode);
+  color: var(--primary-light-mode);
+  transform: translateX(275px);
+  transition: transform 0.5s ease-in-out;
+}
+
+.menuOpen {
+  transform: translateX(0px);
+}
+
+.closeContainer {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  margin: auto;
+  z-index: 5;
+  font-size: 1.75rem;
+  cursor: pointer;
+}
+
+.mobileNav {
+  width: 100%;
+  row-gap: 4rem;
+}
+
+.mobileNavList {
+  width: 100%;
+  row-gap: 1rem;
+}
+
+.mobileLi > .navLink {
+  padding: 0.5rem 1rem;
+  transition: all 0.25s ease-in-out;
+}
+
+.mobileLi > .navLink:hover {
+  color: var(--accent-color);
+  font-style: italic;
+}
+
+.mobileBookingContainer {
+  width: 100%;
+}
+
+.mobileBookingContainer > button {
+  width: 100%;
+  letter-spacing: 0.5px;
+  height: 64px;
+  padding: 0.5rem;
+}
+
+/* main section */
+.mainSection {
+  width: 100%;
+  max-width: 1600px;
+  margin: auto;
+}
+
+.pageSection {
+  width: 100%;
+  padding: 4rem 2rem;
+  margin: 4rem 0rem;
+}
+
+.sectionPara {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.sectionTitle {
+  font-size: 2.25rem;
+}
+
+/* Hero Section */
+.heroSection {
+  width: 100%;
+  max-width: 599px;
+  justify-self: center;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  align-items: center;
+}
+
+.heroCopyContainer {
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  row-gap: 1rem;
+}
+
+.mainTitle {
+  font-size: 4.25rem;
+  font-weight: 700;
+}
+
+.heroSpecialText {
+  color: var(--accent-color);
+  font-weight: 700;
+  font-style: italic;
+}
+
+.heroPara {
+  max-width: 400px;
+}
+
+.heroBtn {
+  width: 100%;
+  max-width: 400px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 1rem;
+}
+
+.heroImgContainer {
+  aspect-ratio: 4 / 5;
+  width: 100%;
+  background-color: var(--neutral-gray);
+  border-radius: 2rem;
+  background-image: url("images/reed-trilogy.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+/*purpose section */
+.purposeSection {
+  width: 100%;
+  max-width: 100%;
+  justify-self: center;
+  grid-template-columns: 1fr;
+  grid-gap: 3rem;
+  align-items: center;
+}
+
+.purposeSection .copyContainer {
+  align-items: center;
+  text-align: center;
+  row-gap: 2rem;
+}
+
+.purposeSection .copyContainer .sectionPara {
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+.specialTitleColor {
+  color: var(--accent-color);
+}
+
+.purposeMediaContainer {
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 16 / 10;
+  background-color: var(--neutral-gray);
+  border-radius: 2rem;
+  align-self: center;
+  justify-self: center;
+}
+
+@media only screen and (min-width: 800px) {
+  .navList {
+    display: flex;
+    align-items: center;
+    font-size: 0.85rem;
+    column-gap: 1.75rem;
+  }
+
+  .navLink {
+    transition: all 0.25s ease-in-out;
+  }
+
+  .navList .navLink:hover,
+  .navList .navLink:focus {
+    color: var(--accent-color);
+    font-style: italic;
+  }
+
+  .bookingBtnContainer {
+    display: flex;
+    margin-left: 2rem;
+  }
+
+  .bookingBtnContainer > button {
+    height: 48px;
+    width: 200px;
+    padding: 0.5rem;
+    border-color: var(--neutral-gray);
+    font-size: 0.85rem;
+    letter-spacing: 0.75px;
+  }
+
+  .bookingBtnContainer > button:hover,
+  .bookingBtnContainer > button:focus {
+    background-color: var(--neutral-gray);
+  }
+
+  .mobileMenuContainer {
+    display: none;
+  }
+
+  /* main section */
+
+  /* Hero Section */
+  .heroSection {
+    width: 100%;
+    max-width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  }
+
+  .heroCopyContainer {
+    width: 100%;
+    max-width: 600px;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    row-gap: 1rem;
+  }
+
+  .mainTitle {
+    font-size: 4.5rem;
+    font-weight: 700;
+  }
+
+  .heroSpecialText {
+    color: var(--accent-color);
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  .heroPara {
+    max-width: 400px;
+    max-width: 80%;
+  }
+
+  .heroBtn {
+    margin: 2rem 0rem;
+    width: 100%;
+    max-width: 500px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 1rem;
+  }
+
+  .heroImgContainer {
+    aspect-ratio: 3 / 2;
+    width: 100%;
+    background-color: var(--neutral-gray);
+    border-radius: 2rem;
+    background-size: 110%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .heroCopyContainer {
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  /* Hero Section */
+  .heroSection {
+    width: 100%;
+    max-width: 1500px;
+    justify-self: center;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    grid-gap: 2rem;
+    align-items: center;
+  }
 }
