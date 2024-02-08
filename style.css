@@ -44,6 +44,9 @@ button {
   --secondary-dark-mode: #ffff;
   --block-dark-bkg: #1c1c1d;
   --dark-shadow: #0000;
+  /* linear gradients */
+  --splash-light-first-color: rgba(217, 217, 217, 1);
+  --splash-ligh-second-color: rgba(4, 159, 245, 1);
 }
 
 /* buttons */
@@ -187,6 +190,7 @@ video {
   color: var(--primary-light-mode);
   transform: translateX(275px);
   transition: transform 0.5s ease-in-out;
+  z-index: 100;
 }
 
 .menuOpen {
@@ -255,6 +259,8 @@ video {
 
 .sectionTitle {
   font-size: 2.25rem;
+  font-weight: 500;
+  text-transform: capitalize;
 }
 
 /* Hero Section */
@@ -342,6 +348,294 @@ video {
   justify-self: center;
 }
 
+/* year round section */
+.year-roundSection {
+  width: 100%;
+  grid-template-columns: 1fr;
+  align-items: center;
+  grid-gap: 2rem;
+}
+
+.year-roundSection .copyContainer {
+  width: 100%;
+  max-width: 500px;
+  row-gap: 1rem;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.boxesContainer {
+  padding: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1.25rem;
+  width: 100%;
+  justify-self: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.box {
+  padding: 1rem;
+  flex-direction: column;
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  max-width: 250px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 1rem;
+  row-gap: 1rem;
+  background-color: var(--primary-light-mode);
+  box-shadow: 0px 4px 12px rgba(192, 192, 192, 0.5);
+  transform: scale(0.9);
+  transition: all 0.25s ease-in-out;
+}
+
+.box:hover {
+  transform: scale(1);
+  box-shadow: 0px 4px 16px rgba(192, 192, 192, 0.95);
+}
+
+.box i {
+  font-size: 2.75rem;
+}
+
+.boxTitle {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.boxText {
+  font-size: 0.75rem;
+  font-weight: 300;
+  width: 75%;
+  align-self: center;
+}
+
+.qualitySection {
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.qualitySection .imageContainer {
+  aspect-ratio: 4 / 5;
+  border-radius: 1rem;
+  background-color: var(--form-light-gray);
+  width: 100%;
+}
+
+.qualitySection .copyContainer {
+  width: 100%;
+  max-width: 450px;
+  row-gap: 1rem;
+  text-align: center;
+}
+
+.qualitySection .trainingList {
+  padding: 2rem 0rem;
+  padding-left: 2.5rem;
+  text-align: left;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 2rem;
+}
+
+.trainingLi {
+  width: 100%;
+  padding: 0.25rem 0.5rem;
+  border-left: 4px solid var(--accent-color);
+}
+
+.trainingLink {
+  width: 100%;
+  height: 100%;
+}
+
+.soonText {
+  font-size: 0.75rem;
+  color: var(--accent-color);
+  font-style: italic;
+}
+
+.ctaSection {
+  position: relative;
+  padding: 8rem 4rem;
+  width: 100%;
+  max-width: 1500px;
+  align-items: center;
+  justify-items: center;
+}
+
+.ctaSection .copyContainer {
+  text-align: center;
+  row-gap: 2rem;
+  max-width: 500px;
+  align-items: center;
+}
+
+.ctaSection .copyContainer button {
+  margin: 2rem 0rem;
+  max-width: 500px;
+  width: 100%;
+  align-self: center;
+}
+
+.mainFooter {
+  width: 100%;
+  padding: 4rem 2rem;
+  background-color: var(--secondary-light-mode);
+  color: var(--primary-light-mode);
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  align-items: center;
+  justify-items: center;
+  grid-gap: 4rem;
+  column-gap: 6rem;
+}
+
+.logoSectionFooter {
+  width: 100%;
+  align-items: center;
+}
+
+.logoFooterImg {
+  width: 375px;
+}
+
+.subscribeFooterContainer {
+  row-gap: 1.5rem;
+  text-align: center;
+  width: 100%;
+  align-items: center;
+}
+
+.subscribeFooterContainer .sectionTitle {
+  font-size: 1.25rem;
+}
+
+.subscribeFooterContainer .sectionPara {
+  font-size: 0.75rem;
+  max-width: 300px;
+}
+
+.subscribeForm {
+  padding: 1rem;
+  row-gap: 1.5rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.subscribeForm input {
+  width: 100%;
+  box-shadow: none;
+  border: 2px solid var(--primary-light-mode);
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+  background-color: var(--secondary-light-mode);
+  color: var(--primary-light-mode);
+}
+
+.subscribeForm button {
+  max-width: 450px;
+  width: 100%;
+}
+
+.hrFooter {
+  grid-column: 1 / -1;
+  width: 100%;
+  max-width: 1500px;
+  height: 2px;
+  background-color: var(--form-light-gray);
+}
+
+.authorContainer {
+  grid-column: 1 / -1;
+  width: 100%;
+  max-width: 1500px;
+  align-items: center;
+  justify-content: center;
+}
+
+.authorLink {
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+/*Decorative splashes*/
+
+.decorativeSplash {
+  position: absolute;
+  display: block;
+  display: none;
+  width: 760px;
+  height: 575px;
+  border-radius: 140px;
+  filter: blur(100px);
+  background-color: #038ddb;
+  background-image: linear-gradient(
+    to bottom,
+    var(--splash-light-first-color),
+    var(--splash-ligh-second-color)
+  );
+  z-index: -1;
+}
+
+.highLeft {
+  width: 600px;
+  height: 500px;
+  transform: rotateX("25");
+  top: 45%;
+  left: -10%;
+  display: block;
+}
+
+.highRight {
+  width: 600px;
+  height: 500px;
+  transform: rotateX("-25");
+  top: 45%;
+  right: -15%;
+  display: block;
+}
+
+.mediumRight {
+  width: 500px;
+  height: 700px;
+  transform: rotateX("-2");
+  filter: blur(140px);
+  top: 250%;
+  right: -15%;
+  display: block;
+}
+
+.lowLeft {
+  width: 500px;
+  height: 500px;
+  transform: rotateX("-25");
+  bottom: -25%;
+  left: -15%;
+  display: block;
+  z-index: -1;
+}
+
+@media only screen and (min-width: 700px) {
+  .qualitySection .copyContainer {
+    width: 100%;
+    max-width: 450px;
+    row-gap: 1rem;
+    text-align: left;
+  }
+}
+
 @media only screen and (min-width: 800px) {
   .navList {
     display: flex;
@@ -390,6 +684,7 @@ video {
     width: 100%;
     max-width: 100%;
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    justify-items: center;
   }
 
   .heroCopyContainer {
@@ -434,12 +729,78 @@ video {
     border-radius: 2rem;
     background-size: 110%;
   }
+
+  .boxesContainer {
+    padding: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-gap: 1.25rem;
+    width: 100%;
+    max-width: 800px;
+    justify-self: center;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .box {
+    padding: 1rem;
+    flex-direction: column;
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    max-width: 325px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 1rem;
+    row-gap: 1rem;
+    box-shadow: 0px 4px 12px rgba(192, 192, 192, 0.5);
+  }
+
+  .mainFooter {
+    width: 100%;
+    padding: 4rem 2rem;
+    background-color: var(--secondary-light-mode);
+    color: var(--primary-light-mode);
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+    justify-items: center;
+    column-gap: 12rem;
+  }
+
+  .logoSectionFooter {
+    align-items: flex-end;
+  }
+
+  .subscribeFooterContainer {
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .subscribeFooterContainer .sectionPara {
+    max-width: 400px;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
   .heroCopyContainer {
     text-align: left;
     align-items: flex-start;
+  }
+
+  .qualitySection {
+    width: 100%;
+    max-width: 1500px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .qualitySection .copyContainer {
+    max-width: 600px;
+  }
+
+  .qualitySection .imageContainer {
+    max-width: 450px;
   }
 }
 
