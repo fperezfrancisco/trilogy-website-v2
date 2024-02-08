@@ -225,8 +225,14 @@
           special events we have throughout the year. Submit your email and
           you’ll be all set!
         </p>
-        <form name="subscriberForm" class="subscribeForm flexColumn" netlify>
+        <form
+          name="subscriberForm"
+          class="subscribeForm flexColumn"
+          method="POST"
+          data-netlify="true"
+        >
           <input
+            name="subscribeEmail"
             class="subscribeInput"
             placeholder="Email..."
             type="email"
