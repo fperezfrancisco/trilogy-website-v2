@@ -517,6 +517,7 @@ video {
 .ctaSection .sectionTitle {
   font-weight: 600;
   font-size: 2rem;
+  letter-spacing: 1.5px;
 }
 
 .ctaSection .copyContainer .ctaSpecial {
@@ -530,6 +531,11 @@ video {
   width: 100%;
   align-self: center;
   background-color: var(--primary-dark-mode);
+}
+
+.ctaSection .copyContainer button:hover,
+.ctaSection .copyContainer button:focus {
+  background-color: var(--form-light-gray);
 }
 
 .mainFooter {
