@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 1px solid greenyellow;
 }
 
 html {
@@ -9,8 +10,8 @@ html {
 }
 
 body {
-  width: 100vw;
-  max-width: 100vw;
+  width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
   height: 100%;
   font-size: 16px;
@@ -182,7 +183,7 @@ video {
   top: 0;
   bottom: 0;
   width: 275px;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   padding: 5rem 1rem 2rem;
@@ -578,7 +579,7 @@ video {
 
 .mainFooter {
   width: 100%;
-  padding: 2rem 1rem;
+  padding: 4rem 1rem;
   background-color: var(--secondary-light-mode);
   color: var(--primary-light-mode);
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -731,6 +732,7 @@ video {
   top: 45%;
   right: -15%;
   display: block;
+  display: none;
 }
 
 .mediumRight {
@@ -741,6 +743,7 @@ video {
   top: 200%;
   right: -15%;
   display: block;
+  display: none;
 }
 
 .lowLeft {
@@ -1030,25 +1033,6 @@ video {
     display: block;
   }
 
-  .highRight {
-    width: 600px;
-    height: 500px;
-    transform: rotateX("-25");
-    top: 45%;
-    right: -15%;
-    display: block;
-  }
-
-  .mediumRight {
-    width: 500px;
-    height: 700px;
-    transform: rotateX("-2");
-    filter: blur(140px);
-    top: 250%;
-    right: -15%;
-    display: block;
-  }
-
   .lowLeft {
     width: 500px;
     height: 500px;
@@ -1081,6 +1065,25 @@ video {
 
   .qualitySection .imageContainer {
     max-width: 600px;
+  }
+
+  .highRight {
+    width: 600px;
+    height: 500px;
+    transform: rotateX("-25");
+    top: 45%;
+    right: 0%;
+    display: block;
+  }
+
+  .mediumRight {
+    width: 500px;
+    height: 700px;
+    transform: rotateX("-2");
+    filter: blur(140px);
+    top: 250%;
+    right: 0%;
+    display: block;
   }
 }
 
@@ -1118,5 +1121,24 @@ video {
 
   .overlay {
     border-radius: 2rem;
+  }
+
+  .highRight {
+    width: 600px;
+    height: 500px;
+    transform: rotateX("-25");
+    top: 45%;
+    right: -15%;
+    display: block;
+  }
+
+  .mediumRight {
+    width: 500px;
+    height: 700px;
+    transform: rotateX("-2");
+    filter: blur(140px);
+    top: 250%;
+    right: -5%;
+    display: block;
   }
 }
