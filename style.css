@@ -337,6 +337,18 @@ video {
   }
 }
 
+.pageLink {
+  font-size: 0.95rem;
+  color: var(--accent-color);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.pageLink:hover,
+.pageLink:active {
+  text-decoration: underline;
+}
+
 /*purpose section */
 .purposeSection {
   width: 100%;
@@ -389,6 +401,11 @@ video {
   aspect-ratio: 9 / 16;
   background-color: var(--neutral-gray);
   border-radius: 2rem;
+}
+
+.purposeMediaContainer video:first-child,
+.purposeMediaContainer video:last-child {
+  display: none;
 }
 
 /* year round section */
@@ -729,9 +746,8 @@ video {
   height: 250px;
   transform: rotateX("-25");
   top: 45%;
-  right: -15%;
+  right: 0%;
   display: block;
-  display: none;
 }
 
 .mediumRight {
@@ -890,6 +906,18 @@ video {
     background-size: 110%;
   }
 
+  .pageLink {
+    font-size: 0.95rem;
+    color: var(--accent-color);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .pageLink:hover,
+  .pageLink:active {
+    text-decoration: underline;
+  }
+
   .purposeMediaContainer {
     width: 100%;
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
@@ -918,6 +946,11 @@ video {
     aspect-ratio: 9 / 16;
     background-color: var(--neutral-gray);
     border-radius: 2rem;
+  }
+
+  .purposeMediaContainer video:first-child,
+  .purposeMediaContainer video:last-child {
+    display: flex;
   }
 
   .boxesContainer {
