@@ -263,6 +263,10 @@ video {
   text-transform: capitalize;
 }
 
+.copyContainer {
+  padding: 0.5rem 1rem;
+}
+
 /* Hero Section */
 .heroSection {
   width: 100%;
@@ -771,6 +775,161 @@ video {
   z-index: -1;
 }
 
+/* TRAINING PAGE SECTION */
+
+body.headerColorChange header {
+  color: var(--primary-light-mode);
+}
+
+.decorativeBlockTop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 900px;
+  min-height: 500px;
+  z-index: -1;
+  background-image: linear-gradient(
+    to bottom,
+    #0352f0,
+    #038ddb,
+    rgba(250, 250, 250, 0.4)
+  );
+  background: rgb(3, 76, 219);
+  background: linear-gradient(
+    to bottom,
+    rgba(3, 76, 219, 1) 0%,
+    rgba(3, 141, 219, 1) 10%,
+    rgba(255, 255, 255, 0.40091116173120733) 100%
+  );
+}
+
+.heroTrainingSection {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin-bottom: 3rem;
+  padding-bottom: 16rem;
+  color: var(--primary-light-mode);
+}
+
+.heroTrainingSection .heroCopyContainer {
+  text-align: center;
+}
+
+.heroTrainingCutout {
+  background-color: transparent;
+  height: 350px;
+  width: 300px;
+  background-image: url("images/elijah-trilogy-cutout.png");
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  margin: auto;
+  z-index: -1;
+}
+
+.philosophySection {
+  align-items: center;
+  justify-items: center;
+  row-gap: 4rem;
+}
+
+.philosophySection .copyContainer {
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  row-gap: 2rem;
+}
+
+.componentsList {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 700;
+  font-style: italic;
+  align-items: center;
+  column-gap: 1rem;
+  row-gap: 1.5rem;
+  justify-content: center;
+}
+
+.vl-blue {
+  width: 3px;
+  height: 24px;
+  background-color: var(--accent-color);
+}
+
+.philosophyImageContainer {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.philosophyImageContainer .imageBox {
+  border-radius: 1rem;
+  background-color: var(--neutral-gray);
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  overflow: hidden;
+}
+
+.imageBox img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.imageBox img.coleImg {
+  object-position: 75%;
+}
+
+/*training box services*/
+.trainingContainer {
+  width: 100%;
+  gap: 2rem;
+  max-width: 600px;
+  justify-self: center;
+}
+
+.trainingServiceBox {
+  padding: 0.5rem;
+  width: 100%;
+  row-gap: 1rem;
+}
+
+.trainingServiceBox .imageContainer {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  border-radius: 1rem;
+  background-color: var(--neutral-gray);
+}
+
+.trainingServiceBox .copyContainer {
+  row-gap: 1rem;
+}
+
+.trainingServiceBox .buttonContainer {
+  padding-top: 1rem;
+  gap: 1rem;
+  width: 100%;
+  align-items: center;
+  justify-items: flex-start;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.trainingServiceBox .buttonContainer button {
+  width: 100%;
+}
+
+/* TRAINING PAGE SECTION */
+
 /* animations */
 @keyframes text-reveal {
   0% {
@@ -1117,6 +1276,36 @@ video {
     right: 0%;
     display: block;
   }
+
+  /*training page*/
+
+  /*training box services*/
+  .trainingContainer {
+    width: 100%;
+    max-width: 800px;
+    gap: 2rem;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+  }
+
+  .trainingServiceBox {
+    padding: 0.5rem;
+    width: 100%;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+  }
+
+  .trainingServiceBox .imageContainer {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    border-radius: 1rem;
+    background-color: var(--neutral-gray);
+  }
+
+  .trainingServiceBox .copyContainer {
+    row-gap: 1rem;
+  }
 }
 
 @media only screen and (min-width: 1400px) {
@@ -1136,6 +1325,33 @@ video {
 
   .mainTitle {
     font-size: 6.5rem;
+  }
+
+  /*training page*/
+
+  /*training box services*/
+  .trainingContainer {
+    width: 100%;
+    max-width: 1440px;
+    gap: 2rem;
+  }
+
+  .trainingServiceBox {
+    padding: 0.5rem;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem;
+  }
+
+  .trainingServiceBox .imageContainer {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    border-radius: 1rem;
+    background-color: var(--neutral-gray);
+  }
+
+  .trainingServiceBox .copyContainer {
+    row-gap: 1rem;
   }
 }
 
