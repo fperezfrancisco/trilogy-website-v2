@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Box Icon Link -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,500;0,700;0,900;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Trilogy Soccer | Training Services | Santa Clarita, CA</title>
+  </head>
+  <body>
+    <header class="mainHeader homeHeader flex">
+      <span class="logoContainer flex">
+        <a class="headerLink logoLink flex" href="index.html">
+          <img
+            class="logoImg"
+            title="Trilogy Soccer"
+            alt="Trilogy Soccer Logo"
+            src="images/trilogy logo soccer training logo transparent.png"
+          />
+        </a>
+      </span>
+      <nav class="mainNav flex">
+        <ul class="navList desktopNavList flex noList">
+          <li class="navLi flex desktopLi">
+            <a href="training-services.html" class="navLink flex"
+              >Training Services</a
+            >
+          </li>
+          <li class="navLi flex desktopLi">
+            <a href="#" class="navLink flex">Pricing & Plans</a>
+          </li>
+          <li class="navLi flex desktopLi">
+            <a href="#" class="navLink flex">About Us</a>
+          </li>
+          <li class="navLi flex desktopLi">
+            <a href="#" class="navLink flex">Contact Us</a>
+          </li>
+        </ul>
+        <span class="bookingBtnContainer flex">
+          <button class="pageBtn bookingBtn secondaryBtn">Booking Page</button>
+        </span>
+        <span class="mobileMenuContainer flex" id="menuOpenBtn">
+          <i class="bx bx-menu"></i>
+        </span>
+      </nav>
+      <div class="mobileMenu" id="mobileMenu">
+        <nav class="mobileNav flexColumn">
+          <div class="closeContainer flex" id="closeMenuBtn">
+            <i class="bx bx-arrow-back"></i>
+          </div>
+          <ul class="mobileNavList noList flexColumn">
+            <li class="navLi flex mobileLi">
+              <a href="training-services.html" class="navLink flex"
+                >Training Services</a
+              >
+            </li>
+            <li class="navLi flex mobileLi">
+              <a href="#" class="navLink flex">Pricing & Plans</a>
+            </li>
+            <li class="navLi flex mobileLi">
+              <a href="#" class="navLink flex">About Us</a>
+            </li>
+            <li class="navLi flex mobileLi">
+              <a href="#" class="navLink flex">Contact Us</a>
+            </li>
+          </ul>
+          <span class="mobileBookingContainer flex">
+            <button class="pageBtn bookingBtn secondaryBtn">
+              Booking Page
+            </button>
+          </span>
+        </nav>
+      </div>
+    </header>
+    <main class="mainSection grid trainingMain">
+      <div class="decorativeSplash highLeft"></div>
+      <section
+        class="heroSection heroTrainingSection pageSection grid"
+        id="heroSectionTrainingPage"
+      >
+        <div class="heroCopyContainer flexColumn">
+          <h1 class="heroTitle mainTitle trainingTitle">
+            All the training services you need to
+            <span class="specialTextHeading heroSpecialText">Stay Ahead</span>.
+          </h1>
+        </div>
+        <div class="heroImgContainer"></div>
+      </section>
+      <section class="pageSection grid ctaSection">
+        <div class="overlay blue"></div>
+        <div class="copyContainer flexColumn">
+          <h2 class="sectionTitle">
+            Are you ready to take your game to the
+            <span class="underline ctaSpecial">Next Level</span>?
+          </h2>
+          <p class="sectionPara">
+            If you're ready to take the next step in elevating your game to new
+            heights, click on the button below to get started with us!
+          </p>
+          <button class="primaryBtn ctaBtn">Start Here</button>
+        </div>
+        <div class="decorativeSplash lowLeft"></div>
+      </section>
+    </main>
+    <footer class="mainFooter grid">
+      <div class="logoSectionFooter flexColumn">
+        <img class="logoFooterImg" src="images/trilogy logo original.png" />
+        <div class="socialsContainer flex">
+          <span class="socialContainer flex">
+            <a
+              href="www.instagram.com/trilogysoccer"
+              target="_blank"
+              class="socialLink"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+          </span>
+          <span class="socialContainer flex">
+            <a
+              href="tiktok.com/trilogysoccer"
+              target="_blank"
+              class="socialLink"
+              ><i class="bx bxl-tiktok"></i
+            ></a>
+          </span>
+          <span class="socialContainer flex">
+            <a href="#" class="socialLink"><i class="bx bxl-youtube"></i></a>
+          </span>
+          <span class="socialContainer flex">
+            <a href="#" class="socialLink"><i class="bx bxl-gmail"></i></a>
+          </span>
+        </div>
+      </div>
+      <div class="subscribeFooterContainer flexColumn">
+        <h2 class="sectionTitle">Stay up to date with Trilogy Soccer</h2>
+        <p class="sectionPara">
+          Subscribe to our newsletter so you never miss an update, camp, or
+          special events we have throughout the year. Submit your email and
+          you’ll be all set!
+        </p>
+        <form
+          name="subscriberForm"
+          class="subscribeForm flexColumn"
+          method="POST"
+          data-netlify="true"
+        >
+          <input
+            name="subscribeEmail"
+            class="subscribeInput"
+            placeholder="Email..."
+            type="email"
+            required
+          />
+          <button class="formBtn secondaryBtn" type="submit">Subscribe</button>
+        </form>
+      </div>
+      <div class="hrFooter"></div>
+      <div class="authorContainer flex">
+        <a class="authorLink" href="#"
+          >Website Design & Development by Francisco J. Perez</a
+        >
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
