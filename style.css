@@ -1005,6 +1005,12 @@ body.headerColorChange header {
   background-color: var(--primary-light-mode);
   align-items: center;
   row-gap: 1rem;
+  transition: box-shadow 0.25s ease-in-out;
+}
+
+.planBox:hover,
+.planBox:focus {
+  box-shadow: 0px 0px 16px rgba(69, 69, 69, 0.5);
 }
 
 .planBox .planPrice {
@@ -1035,6 +1041,8 @@ body.headerColorChange header {
   max-width: 100%;
   width: 100%;
   height: 60px;
+  justify-self: flex-end;
+  align-self: flex-end;
 }
 
 /* PRICING PAGE SECTION */
@@ -1391,6 +1399,20 @@ body.headerColorChange header {
     max-width: 450px;
     height: 80px;
     max-height: 80px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  /* pricing page*/
+
+  .plansBoxContainer {
+    gap: 1.5rem;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .planBox {
+    max-width: 350px;
   }
 }
 
