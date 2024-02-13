@@ -1047,6 +1047,117 @@ body.headerColorChange header {
 
 /* PRICING PAGE SECTION */
 
+/* ABOUT PAGE SECTION */
+
+.aboutMain .decorativeBlockTop {
+  max-height: 1200px;
+  height: 120vh;
+}
+
+.heroAboutSection {
+  gap: 2rem;
+}
+
+.heroAboutSection .heroCopyContainer {
+  color: var(--primary-light-mode);
+}
+
+.heroAboutSection .heroImgContainer {
+  background-image: url("images/trilogy-coaches.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.beginningSection {
+  gap: 2rem;
+}
+
+.beginningSection .imageContainer {
+  background-color: var(--neutral-gray);
+  background-image: url("images/beginnings.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  border-radius: 1rem;
+}
+
+.beginningSection .copyContainer {
+  row-gap: 2rem;
+}
+
+.beginningSection .authorContainer {
+  row-gap: 0.5rem;
+  align-items: flex-start;
+}
+
+.beginningSection .authorContainer .authorTitle {
+  font-weight: 700;
+}
+
+.beginningSection .authorContainer .authorDescription {
+  font-size: 0.75rem;
+  column-gap: 0.5rem;
+  font-style: italic;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.missionStatement {
+  row-gap: 2rem;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.missionStatement .copyContainer {
+  row-gap: 2rem;
+  width: 75%;
+}
+
+.missionStatement .imageContainer {
+  width: 100%;
+  border-radius: 1rem;
+  aspect-ratio: 4 / 3;
+  background-image: url("images/trilogy-full-camp.jpg");
+  background-size: cover;
+}
+
+.ourTeamSection {
+  row-gap: 2rem;
+  text-align: center;
+  align-items: center;
+}
+
+.staffContainer {
+  padding: 1rem;
+  gap: 2rem;
+  width: 100%;
+  justify-items: center;
+}
+
+.staffContainer .imageContainer {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  max-width: 350px;
+  border-radius: 1rem;
+  background-color: var(--neutral-gray);
+}
+
+.staffContainer .copyContainer {
+  width: 100%;
+  max-width: 400px;
+  text-align: left;
+  row-gap: 1rem;
+}
+
+.staffContainer .copyContainer .sectionPara {
+  line-height: 1.5;
+}
+
+/* ABOUT PAGE SECTION */
+
 /* animations */
 @keyframes text-reveal {
   0% {
@@ -1099,6 +1210,19 @@ body.headerColorChange header {
   /* PRICING PAGE SECTION */
   .heroPricingSection .heroCopyContainer {
     max-width: 700px;
+  }
+
+  /* ABOUT SECTION */
+  .staffContainer {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    max-width: 850px;
+    justify-self: center;
+  }
+
+  .staffContainer .copyContainer {
+    width: 100%;
+    max-width: 500px;
   }
 }
 
@@ -1400,6 +1524,28 @@ body.headerColorChange header {
     height: 80px;
     max-height: 80px;
   }
+
+  /* ABOUT PAGE SECTION */
+  .beginningSection {
+    margin: 4rem 0rem;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    justify-self: center;
+  }
+
+  .beginningSection .imageContainer {
+    width: 100%;
+    max-width: 500px;
+    justify-self: flex-end;
+  }
+
+  .missionStatement .copyContainer {
+    max-width: 600px;
+  }
+
+  .missionStatement .imageContainer {
+    max-width: 950px;
+  }
 }
 
 @media only screen and (min-width: 900px) {
@@ -1413,6 +1559,16 @@ body.headerColorChange header {
 
   .planBox {
     max-width: 350px;
+  }
+
+  /* ABOUT PAGE SECTION */
+  .heroAboutSection {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .heroAboutSection .copyContainer {
+    text-align: left;
   }
 }
 
@@ -1503,6 +1659,13 @@ body.headerColorChange header {
 
   .trainingServiceBox .copyContainer {
     row-gap: 1rem;
+  }
+
+  /* ABOUT PAGE SECTION */
+  .beginningSection {
+    max-width: 80%;
+    justify-self: center;
+    margin: 8rem 0rem;
   }
 }
 
