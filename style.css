@@ -444,6 +444,7 @@ video {
 }
 
 .box {
+  cursor: pointer;
   padding: 1rem;
   flex-direction: column;
   aspect-ratio: 1 / 1;
@@ -1074,7 +1075,7 @@ body.headerColorChange header {
 
 .beginningSection .imageContainer {
   background-color: var(--neutral-gray);
-  background-image: url("images/beginnings.jpg");
+  background-image: url("images/cisco-cal.jpeg");
   background-size: cover;
   background-position: center;
   width: 100%;
