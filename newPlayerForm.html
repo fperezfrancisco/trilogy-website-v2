@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="ctaStyle.css" />
+    <!-- Box Icon Link -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,500;0,700;0,900;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>
+      Trilogy Soccer | Welcome to Trilogy Soccer! | Santa Clarita, CA
+    </title>
+  </head>
+  <body class="ctaBody">
+    <header class="mainHeader ctaHeader flex">
+      <span class="logoContainer flex">
+        <a class="headerLink logoLink flex" href="index.html">
+          <img
+            class="logoImg"
+            title="Trilogy Soccer"
+            alt="Trilogy Soccer Logo"
+            src="images/trilogy logo soccer training logo transparent.png"
+          />
+        </a>
+      </span>
+      <span class="backHome flex">
+        <a href="index.html" class="headerLink flex">Back to Home Page</a>
+      </span>
+    </header>
+    <main class="mainCta grid">
+      <section class="pageSection ctaHeroSection grid">
+        <h1 class="heroTitle mainTitle ctaTitle">Welcome to Trilogy Soccer!</h1>
+        <p class="sectionPara">
+          We’re excited that you have decided to start with us. We can’t wait to
+          help you elevate your game! We just need a few things to get started.
+          Follow the 3 step process before hitting the field with us!
+        </p>
+        <form action="post" class="ctaForm formContainer grid">
+          <div class="formHeaderContainer flexColumn">
+            <div class="formNumbers flex">
+              <span class="number filled" id="formNumber-1">1</span
+              ><span class="number" id="formNumber-2">2</span
+              ><span class="number" id="formNumber-3">3</span>
+            </div>
+            <h2 class="sectionTitle ctaFormTitle active" id="formTitle-1">
+              Player Details
+            </h2>
+            <h2 class="sectionTitle ctaFormTitle" id="formTitle-2">
+              Contact Information
+            </h2>
+            <h2 class="sectionTitle ctaFormTitle" id="formTitle-3">
+              Tell us about you as a player
+            </h2>
+            <h2 class="sectionTitle ctaFormTitle">
+              Thank you! Check out some other actions while you wait to hear
+              back from us.
+            </h2>
+          </div>
+          <div class="ctaFormBox grid">
+            <div class="firstPageCtaForm ctaPage grid formPageActive">
+              <ul class="formList noList flexColumn">
+                <li class="formLi ctaFormLi flex">
+                  <label for="playerFirstName" class="formLabel ctaFormLabel"
+                    >Player First Name (required)</label
+                  >
+                  <p class="requiredAlert" id="fNameAlert">
+                    *Please fill this input before moving forward.*
+                  </p>
+                  <input
+                    type="text"
+                    class="formInput ctaFormInput"
+                    id="playerFirstName"
+                    name="playerFirstName"
+                    placeholder="ex: Lionel"
+                    required
+                  />
+                </li>
+                <li class="formLi ctaFormLi flex">
+                  <label for="playerLastName" class="formLabel ctaFormLabel"
+                    >Player Last Name (required)</label
+                  >
+                  <p class="requiredAlert" id="lNameAlert">
+                    *Please fill this input before moving forward.*
+                  </p>
+                  <input
+                    type="text"
+                    class="formInput ctaFormInput"
+                    id="playerLastName"
+                    name="playerLastName"
+                    placeholder="ex: Messi"
+                    required
+                  />
+                </li>
+                <li class="formLi ctaFormLi flex">
+                  <label for="playerDOB" class="formLabel ctaFormLabel"
+                    >Player Date of Birth</label
+                  >
+                  <p class="requiredAlert" id="dobAlert">
+                    *Please fill this input before moving forward.*
+                  </p>
+                  <input
+                    type="date"
+                    class="formInput ctaFormInput"
+                    id="playerDOB"
+                    required
+                  />
+                </li>
+                <li class="formLi radioLi ctaFormLi flex">
+                  <p class="formLabel ctaFormLabel">Player Gender</p>
+                  <p class="requiredAlert" id="genderAlert">
+                    *Please fill this input before moving forward.*
+                  </p>
+                  <div class="radioContainer flex" role="radiogroup">
+                    <input
+                      type="radio"
+                      class="formInput ctaFormInput"
+                      id="inputMale"
+                      name="playerGender"
+                      value="male"
+                      role="radio"
+                      tabindex="0"
+                      required
+                    />
+                    <label
+                      for="inputMale"
+                      class="radioLabel ctaFormRadioLabel"
+                      id="labelMale"
+                      role="radio"
+                      tabindex="0"
+                      >Male</label
+                    >
+
+                    <input
+                      type="radio"
+                      class="formInput ctaFormInput"
+                      id="inputFemale"
+                      name="playerGender"
+                      value="female"
+                    />
+                    <label
+                      for="inputFemale"
+                      id="labelFemale"
+                      role="radio"
+                      class="radioLabel ctaFormRadioLabel"
+                      tabindex="0"
+                      >Female</label
+                    >
+                    <input
+                      type="radio"
+                      class="formInput ctaFormInput"
+                      id="inputOther"
+                      name="playerGender"
+                      value="prefer not say"
+                    />
+                    <label
+                      for="inputOther"
+                      id="labelOther"
+                      role="radio"
+                      tabindex="0     "
+                      class="radioLabel ctaFormRadioLabel"
+                      >Prefer not say</label
+                    >
+                  </div>
+                </li>
+              </ul>
+              <button class="secondaryBtn" id="nextBtn-page1">Next</button>
+            </div>
+            <div class="secondPageCtaForm ctaPage grid">
+              <ul class="formList noList flexColumn">
+                <li class="formLi ctaFormLi flex">
+                  <label for="parentName" class="formLabel ctaFormLabel"
+                    >Parent/Guardian Contact Full Name</label
+                  >
+                  <input
+                    type="text"
+                    class="formInput ctaFormInput"
+                    id="parentName"
+                    name="parentName"
+                    placeholder="ex: John Adams"
+                    required
+                  />
+                </li>
+                <li class="formLi radioLi ctaFormLi flex">
+                  <p class="formLabel ctaFormLabel">Relationship to Player</p>
+                  <div class="radioContainer flex" role="radiogroup">
+                    <input
+                      type="radio"
+                      class="formInput ctaFormInput"
+                      id="inputFather"
+                      name="playerParent"
+                      value="father"
+                      role="radio"
+                      tabindex="0"
+                      required
+                    />
+                    <label
+                      for="inputFather"
+                      class="radioLabel ctaFormRadioLabel"
+                      id="labelFather"
+                      role="radio"
+                      tabindex="0"
+                      >Father</label
+                    >
+                    <input
+                      type="radio"
+                      class="formInput ctaFormInput"
+                      id="inputMother"
+                      name="playerParent"
+                      value="mother"
+                      role="radio"
+                      tabindex="0"
+                      required
+                    />
+                    <label
+                      for="inputMother"
+                      class="radioLabel ctaFormRadioLabel"
+                      id="labelMother"
+                      role="radio"
+                      tabindex="0"
+                      >Mother</label
+                    >
+                    <input
+                      type="radio"
+                      class="formInput ctaFormInput"
+                      id="inputSibling"
+                      name="playerParent"
+                      value="sibling"
+                      role="radio"
+                      tabindex="0"
+                      required
+                    />
+                    <label
+                      for="inputSibling"
+                      class="radioLabel ctaFormRadioLabel"
+                      id="labelSibling"
+                      role="radio"
+                      tabindex="0"
+                      >Sibling</label
+                    >
+                    <input
+                      type="radio"
+                      class="formInput ctaFormInput"
+                      id="inputGuardian"
+                      name="playerParent"
+                      value="Guardian"
+                      role="radio"
+                      tabindex="0"
+                      required
+                    />
+                    <label
+                      for="inputGuardian"
+                      class="radioLabel ctaFormRadioLabel"
+                      id="labelGuardian"
+                      role="radio"
+                      tabindex="0"
+                      >Guardian</label
+                    >
+                    <input
+                      type="radio"
+                      class="formInput ctaFormInput"
+                      id="inputOtherGuardian"
+                      name="playerParent"
+                      value="other"
+                      role="radio"
+                      tabindex="0"
+                      required
+                    />
+                    <label
+                      for="inputOtherGuardian"
+                      class="radioLabel ctaFormRadioLabel"
+                      id="labelOther"
+                      role="radio"
+                      tabindex="0"
+                      >Other</label
+                    >
+                  </div>
+                </li>
+                <li class="formLi ctaFormLi flex">
+                  <label for="playerEmail" class="formLabel ctaFormLabel"
+                    >Best Email to Contact</label
+                  >
+                  <input
+                    type="email"
+                    class="formInput ctaFormInput"
+                    id="playerEmail"
+                    name="playerEmail"
+                    placeholder="ex: lafc@gmail.com"
+                    required
+                  />
+                </li>
+                <li class="formLi ctaFormLi flex">
+                  <label for="playerPhone" class="formLabel ctaFormLabel"
+                    >Best Phone Number to Contact</label
+                  >
+                  <input
+                    type="tel"
+                    class="formInput ctaFormInput"
+                    id="playerPhone"
+                    placeholder="ex: 1-234-5678"
+                    required
+                  />
+                </li>
+                <li class="formLi ctaFormLi flex">
+                  <label for="playerAddress" class="formLabel ctaFormLabel"
+                    >Address (for insurance purposes)
+                  </label>
+                  <input
+                    type="text"
+                    class="formInput ctaFormInput"
+                    id="playerAddress"
+                    name="playerEmail"
+                    placeholder="ex: 1235 W Lane St. #300, Canyon Country, CA 91351"
+                    required
+                  />
+                </li>
+              </ul>
+              <button class="backBtn secondaryBtn" id="back-page2">
+                Go Back
+              </button>
+              <button class="secondaryBtn" id="nextBtn-page2">Next</button>
+            </div>
+            <div class="thirdPageCtaForm ctaPage grid">
+              <ul class="formList noList flexColumn">
+                <li class="formLi ctaFormLi flex">
+                  <label for="parentName" class="formLabel ctaFormLabel"
+                    >Current Team</label
+                  >
+                  <input
+                    type="text"
+                    class="formInput ctaFormInput"
+                    id="parentName"
+                    name="parentName"
+                    placeholder="ex: LAFC B2014 Gold"
+                    required
+                  />
+                </li>
+                <li class="formLi radioLi ctaFormLi flex">
+                  <p class="formLabel ctaFormLabel">
+                    Most accurate playing level
+                  </p>
+                  <div
+                    class="radioContainer levelRadioGroup flex"
+                    role="radiogroup"
+                  >
+                    <input
+                      type="radio"
+                      class="formInput ctaFormInput"
+                      id="beginnerLevel"
+                      name="playerLevel"
+                      value="beginner/new"
+                      role="radio"
+                      tabindex="0"
+                      required
+                    />
+                    <label
+                      for="beginnerLevel"
+                      class="radioLabel ctaFormRadioLabel"
+                      id="labelBeginner"
+                      role="radio"
+                      tabindex="0"
+                      >Beginner/New</label
+                    >
+                    <input
+                      type="radio"
+                      class="formInput ctaFormInput"
+                      id="flight4"
+                      name="playerLevel"
+                      value="flight 4"
+                      role="radio"
+                      tabindex="0"
+                      required
+                    />
+                    <label
+                      for="flight4"
+                      class="radioLabel ctaFormRadioLabel"
+                      id="labelFlight4"
+                      role="radio"
+                      tabindex="0"
+                      >Flight 4</label
+                    >
+                    <input
+                      type="radio"
+                      class="formInput ctaFormInput"
+                      id="flight3"
+                      name="playerLevel"
+                      value="flight 3"
+                      role="radio"
+                      tabindex="0"
+                      required
+                    />
+                    <label
+                      for="flight3"
+                      class="radioLabel ctaFormRadioLabel"
+                      id="labelFlight3"
+                      role="radio"
+                      tabindex="0"
+                      >Flight 3</label
+                    >
+                    <input
+                      type="radio"
+                      class="formInput ctaFormInput"
+                      id="flight2"
+                      name="playerLevel"
+                      value="flight 2"
+                      role="radio"
+                      tabindex="0"
+                      required
+                    />
+                    <label
+                      for="flight2"
+                      class="radioLabel ctaFormRadioLabel"
+                      id="labelFlight2"
+                      role="radio"
+                      tabindex="0"
+                      >Flight 2</label
+                    >
+                    <input
+                      type="radio"
+                      class="formInput ctaFormInput"
+                      id="flight1"
+                      name="playerLevel"
+                      value="flight 1"
+                      role="radio"
+                      tabindex="0"
+                      required
+                    />
+                    <label
+                      for="flight1"
+                      class="radioLabel ctaFormRadioLabel"
+                      id="labelFlight1"
+                      role="radio"
+                      tabindex="0"
+                      >Flight 1</label
+                    >
+                    <input
+                      type="radio"
+                      class="formInput ctaFormInput"
+                      id="npl"
+                      name="playerLevel"
+                      value="npl"
+                      role="radio"
+                      tabindex="0"
+                      required
+                    />
+                    <label
+                      for="npl"
+                      class="radioLabel ctaFormRadioLabel"
+                      id="labelNpl"
+                      role="radio"
+                      tabindex="0"
+                      >NPL/E64</label
+                    >
+                    <input
+                      type="radio"
+                      class="formInput ctaFormInput"
+                      id="ecrl"
+                      name="playerLevel"
+                      value="ecrl"
+                      role="radio"
+                      tabindex="0"
+                      required
+                    />
+                    <label
+                      for="ecrl"
+                      class="radioLabel ctaFormRadioLabel"
+                      id="labelECRL"
+                      role="radio"
+                      tabindex="0"
+                      >ECRL</label
+                    >
+                    <input
+                      type="radio"
+                      class="formInput ctaFormInput"
+                      id="ecnl"
+                      name="playerLevel"
+                      value="ecnl"
+                      role="radio"
+                      tabindex="0"
+                      required
+                    />
+                    <label
+                      for="ecnl"
+                      class="radioLabel ctaFormRadioLabel"
+                      id="labelEcnl"
+                      role="radio"
+                      tabindex="0"
+                      >ECNL</label
+                    >
+                    <input
+                      type="radio"
+                      class="formInput ctaFormInput"
+                      id="academy"
+                      name="playerLevel"
+                      value="academy"
+                      role="radio"
+                      tabindex="0"
+                      required
+                    />
+                    <label
+                      for="academy"
+                      class="radioLabel ctaFormRadioLabel"
+                      id="labelAcademy"
+                      role="radio"
+                      tabindex="0"
+                      >MLS NEXT Academy</label
+                    >
+                    <input
+                      type="radio"
+                      class="formInput ctaFormInput"
+                      id="college"
+                      name="playerLevel"
+                      value="college"
+                      role="radio"
+                      tabindex="0"
+                      required
+                    />
+                    <label
+                      for="college"
+                      class="radioLabel ctaFormRadioLabel"
+                      id="labelCollege"
+                      role="radio"
+                      tabindex="0"
+                      >College Athlete</label
+                    >
+                    <input
+                      type="radio"
+                      class="formInput ctaFormInput"
+                      id="pro"
+                      name="playerLevel"
+                      value="pro"
+                      role="radio"
+                      tabindex="0"
+                      required
+                    />
+                    <label
+                      for="pro"
+                      class="radioLabel ctaFormRadioLabel"
+                      id="labelPro"
+                      role="radio"
+                      tabindex="0"
+                      >Pro Athlete</label
+                    >
+                    <input
+                      type="radio"
+                      class="formInput ctaFormInput"
+                      id="otherLevel"
+                      name="playerLevel"
+                      value="other level"
+                      role="radio"
+                      tabindex="0"
+                      required
+                    />
+                    <label
+                      for="otherLevel"
+                      class="radioLabel ctaFormRadioLabel"
+                      id="labelOtherLevel"
+                      role="radio"
+                      tabindex="0"
+                      >Other</label
+                    >
+                  </div>
+                </li>
+                <li class="formLi radioLi ctaFormLi flex">
+                  <p class="formLabel ctaFormLabel">
+                    Position(s) - Select those that best apply
+                  </p>
+                  <div class="radioContainer levelRadioGroup flex">
+                    <input
+                      type="checkbox"
+                      class="formInput ctaFormInput"
+                      id="positionCB"
+                      name="playerPosition"
+                      value="Center Back"
+                      role="checkbox"
+                      tabindex="0"
+                      required
+                    />
+                    <label
+                      for="positionCB"
+                      class="radioLabel ctaFormRadioLabel"
+                      id="labelCB"
+                      role="radio"
+                      tabindex="0"
+                      >Center Back</label
+                    >
+                    <input
+                      type="checkbox"
+                      class="formInput ctaFormInput"
+                      id="positionOutsideBack"
+                      name="playerPosition"
+                      value="Outside Back"
+                      role="checkbox"
+                      tabindex="0"
+                      required
+                    />
+                    <label
+                      for="positionOutsideBack"
+                      class="radioLabel ctaFormRadioLabel"
+                      id="labelOutsideBack"
+                      role="radio"
+                      tabindex="0"
+                      >Outside Back</label
+                    >
+                    <input
+                      type="checkbox"
+                      class="formInput ctaFormInput"
+                      id="positionWinger"
+                      name="playerPosition"
+                      value="Winger"
+                      role="checkbox"
+                      tabindex="0"
+                      required
+                    />
+                    <label
+                      for="positionWinger"
+                      class="radioLabel ctaFormRadioLabel"
+                      id="labelWinger"
+                      role="radio"
+                      tabindex="0"
+                      >Winger</label
+                    >
+                    <input
+                      type="checkbox"
+                      class="formInput ctaFormInput"
+                      id="positionCenterMid"
+                      name="playerPosition"
+                      value="Center Mid"
+                      role="checkbox"
+                      tabindex="0"
+                      required
+                    />
+                    <label
+                      for="positionCenterMid"
+                      class="radioLabel ctaFormRadioLabel"
+                      id="labelCM"
+                      role="radio"
+                      tabindex="0"
+                      >Center Mid</label
+                    >
+                    <input
+                      type="checkbox"
+                      class="formInput ctaFormInput"
+                      id="positionStriker"
+                      name="playerPosition"
+                      value="Striker"
+                      role="checkbox"
+                      tabindex="0"
+                      required
+                    />
+                    <label
+                      for="positionStriker"
+                      class="radioLabel ctaFormRadioLabel"
+                      id="labelStriker"
+                      role="radio"
+                      tabindex="0"
+                      >Striker</label
+                    >
+                    <input
+                      type="checkbox"
+                      class="formInput ctaFormInput"
+                      id="positionGK"
+                      name="playerPosition"
+                      value="GK"
+                      role="checkbox"
+                      tabindex="0"
+                      required
+                    />
+                    <label
+                      for="positionGK"
+                      class="radioLabel ctaFormRadioLabel"
+                      id="labelGK"
+                      role="radio"
+                      tabindex="0"
+                      >Goalkeeper</label
+                    >
+                    <input
+                      type="checkbox"
+                      class="formInput ctaFormInput"
+                      id="positionCAM"
+                      name="playerPosition"
+                      value="CAM"
+                      role="checkbox"
+                      tabindex="0"
+                      required
+                    />
+                    <label
+                      for="positionCAM"
+                      class="radioLabel ctaFormRadioLabel"
+                      id="labelCAM"
+                      role="radio"
+                      tabindex="0"
+                      >Attacking Mid</label
+                    >
+                    <input
+                      type="checkbox"
+                      class="formInput ctaFormInput"
+                      id="positionCDM"
+                      name="playerPosition"
+                      value="CDM"
+                      role="checkbox"
+                      tabindex="0"
+                      required
+                    />
+                    <label
+                      for="positionCDM"
+                      class="radioLabel ctaFormRadioLabel"
+                      id="labelCDM"
+                      tabindex="0"
+                      >Defensive Mid</label
+                    >
+                    <input
+                      type="checkbox"
+                      class="formInput ctaFormInput"
+                      id="positionOther"
+                      name="playerPosition"
+                      value="other position"
+                      tabindex="0"
+                      required
+                    />
+                    <label
+                      for="positionOther"
+                      class="radioLabel ctaFormRadioLabel"
+                      id="labelOtherPosition"
+                      tabindex="0"
+                      >Other</label
+                    >
+                  </div>
+                </li>
+
+                <li class="formtLi ctaFormLi flexColumn">
+                  <label class="formLabel ctaFormLabel" for="message"
+                    >Short Message</label
+                  >
+                  <textarea
+                    class="formContactTextArea"
+                    id="message"
+                    placeholder="What can we help you with?"
+                    required
+                  ></textarea>
+                </li>
+              </ul>
+              <button class="backBtn secondaryBtn" id="back-page3">
+                Go Back
+              </button>
+              <button class="primaryBtn" id="submitBtn-ctaForm">
+                Submit Form
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+    <script src="ctaScript.js"></script>
+  </body>
+</html>

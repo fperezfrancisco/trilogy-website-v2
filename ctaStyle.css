@@ -28,6 +28,7 @@
 .ctaHeroSection .questionSection {
   align-items: center;
   row-gap: 2rem;
+  width: 100%;
 }
 
 .ctaHeroSection .sectionPara {
@@ -70,4 +71,225 @@
 .contactLinkCta:hover,
 .contactLinkCta:focus {
   text-decoration: underline;
+}
+
+/* new player form */
+
+.ctaForm {
+  width: 100%;
+  max-width: 650px;
+  padding: 1rem;
+  row-gap: 2rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.formHeaderContainer {
+  row-gap: 1rem;
+  align-items: center;
+  width: 100%;
+}
+
+.formNumbers {
+  width: 100%;
+  column-gap: 1.5rem;
+  justify-content: center;
+}
+
+.formNumbers .number {
+  width: 36px;
+  aspect-ratio: 1 / 1;
+  border: 1px solid #038ddb;
+  border-radius: 100%;
+  color: #038ddb;
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formNumbers .number.filled {
+  background-color: #038ddb;
+  color: #fff;
+}
+
+.ctaFormTitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  display: none;
+}
+
+.ctaFormTitle.active {
+  display: block;
+}
+
+.ctaFormBox {
+  width: 100%;
+  min-height: 500px;
+  height: 100%;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px rgba(64, 64, 64, 0.5);
+}
+
+/* form pages */
+
+.ctaPage {
+  width: 100%;
+  justify-items: center;
+  row-gap: 1rem;
+  padding: 1rem;
+}
+
+.formList {
+  width: 100%;
+  row-gap: 1rem;
+}
+
+.ctaPage .formList .ctaFormLi {
+  flex-direction: column;
+  row-gap: 0.5rem;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.ctaPage .ctaFormInput {
+  padding: 0.5rem 1rem;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #000;
+  color: inherit;
+  font-family: inherit;
+}
+
+.ctaPage .radioContainer {
+  column-gap: 1.5rem;
+  padding: 1rem 0rem;
+}
+
+.formRadioContainer {
+  position: relative;
+}
+
+.ctaPage .radioContainer .ctaFormInput {
+  display: none;
+}
+
+.ctaPage .radioLabel {
+  padding: 0.5rem 1rem;
+  border: 1px solid #000;
+  border-radius: 1rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.ctaPage input[type="radio"]:checked + label#labelMale,
+.ctaPage input[type="radio"]:checked + label#labelFemale,
+.ctaPage input[type="radio"]:checked + label#labelOther,
+.ctaPage input[type="radio"]:checked + label#labelFather,
+.ctaPage input[type="radio"]:checked + label#labelMother,
+.ctaPage input[type="radio"]:checked + label#labelSibling,
+.ctaPage input[type="radio"]:checked + label#labelGuardian,
+.ctaPage input[type="radio"]:checked + label#labelBeginner,
+.ctaPage input[type="radio"]:checked + label#labelFlight4,
+.ctaPage input[type="radio"]:checked + label#labelFlight3,
+.ctaPage input[type="radio"]:checked + label#labelFlight2,
+.ctaPage input[type="radio"]:checked + label#labelFlight1,
+.ctaPage input[type="radio"]:checked + label#labelNpl,
+.ctaPage input[type="radio"]:checked + label#labelECRL,
+.ctaPage input[type="radio"]:checked + label#labelEcnl,
+.ctaPage input[type="radio"]:checked + label#labelAcademy,
+.ctaPage input[type="radio"]:checked + label#labelCollege,
+.ctaPage input[type="radio"]:checked + label#labelPro,
+.ctaPage input[type="radio"]:checked + label#labelOtherLevel,
+.ctaPage input[type="checkbox"]:checked + label#labelOtherPosition,
+.ctaPage input[type="checkbox"]:checked + label#labelCDM,
+.ctaPage input[type="checkbox"]:checked + label#labelCAM,
+.ctaPage input[type="checkbox"]:checked + label#labelGK,
+.ctaPage input[type="checkbox"]:checked + label#labelStriker,
+.ctaPage input[type="checkbox"]:checked + label#labelCM,
+.ctaPage input[type="checkbox"]:checked + label#labelWinger,
+.ctaPage input[type="checkbox"]:checked + label#labelOutsideBack,
+.ctaPage input[type="checkbox"]:checked + label#labelCB {
+  background-color: #038ddb;
+  color: #fff;
+}
+
+label#labelMale:hover,
+label#labelFemale:hover,
+label#labelOther:hover,
+label#labelFather:hover,
+label#labelMother:hover,
+label#labelSibling:hover,
+label#labelGuardian:hover,
+label#labelOtherLevel:hover,
+label#labelPro:hover,
+label#labelCollege:hover,
+label#labelAcademy:hover,
+label#labelEcnl:hover,
+label#labelECRL:hover,
+label#labelNpl:hover,
+label#labelFlight1:hover,
+label#labelFlight2:hover,
+label#labelFlight3:hover,
+label#labelFlight4:hover,
+label#labelBeginner:hover,
+label#labelCB:hover,
+label#labelOutsideBack:hover,
+label#labelWinger:hover,
+label#labelCM:hover,
+label#labelStriker:hover,
+label#labelGK:hover,
+label#labelCAM:hover,
+label#labelCDM:hover,
+label#labelOtherPosition:hover {
+  background-color: #038ddb;
+  color: #fff;
+}
+
+.ctaPage .secondaryBtn,
+.ctaPage .primaryBtn {
+  width: 100%;
+  max-width: 450px;
+}
+
+.firstPageCtaForm,
+.secondPageCtaForm,
+.thirdPageCtaForm {
+  display: none;
+}
+
+.formPageActive {
+  display: grid;
+}
+
+#back-page2 {
+  border: none;
+  font-size: 0.65rem;
+}
+
+.ctaPage textarea {
+  width: 100%;
+  border-color: #000;
+}
+
+.levelRadioGroup {
+  flex-wrap: wrap;
+  row-gap: 1rem;
+}
+
+.requiredAlert {
+  font-size: 0.75rem;
+  color: red;
+  font-style: italic;
+  display: none;
+}
+
+.requiredAlert.active {
+  display: block;
 }

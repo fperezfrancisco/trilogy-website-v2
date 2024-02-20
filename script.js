@@ -14,3 +14,5 @@ closeMenuBtn.addEventListener("click", () => {
   console.log("Close Btn Is Clicked!");
   mobileMenu.classList.remove("menuOpen");
 });
+
+/* CTA form functionality */
