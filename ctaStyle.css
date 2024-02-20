@@ -283,6 +283,11 @@ label#labelOtherPosition:hover {
   row-gap: 1rem;
 }
 
+.requiredSpan {
+  font-size: 0.75rem;
+  font-style: italic;
+}
+
 .requiredAlert {
   font-size: 0.75rem;
   color: red;

@@ -45,7 +45,7 @@
           help you elevate your game! We just need a few things to get started.
           Follow the 3 step process before hitting the field with us!
         </p>
-        <form action="post" class="ctaForm formContainer grid">
+        <form action="post" class="ctaForm formContainer grid" id="ctaForm">
           <div class="formHeaderContainer flexColumn">
             <div class="formNumbers flex">
               <span class="number filled" id="formNumber-1">1</span
@@ -71,7 +71,8 @@
               <ul class="formList noList flexColumn">
                 <li class="formLi ctaFormLi flex">
                   <label for="playerFirstName" class="formLabel ctaFormLabel"
-                    >Player First Name (required)</label
+                    >Player First Name
+                    <span class="requiredSpan">(required)</span></label
                   >
                   <p class="requiredAlert" id="fNameAlert">
                     *Please fill this input before moving forward.*
@@ -87,7 +88,8 @@
                 </li>
                 <li class="formLi ctaFormLi flex">
                   <label for="playerLastName" class="formLabel ctaFormLabel"
-                    >Player Last Name (required)</label
+                    >Player Last Name
+                    <span class="requiredSpan">(required)</span></label
                   >
                   <p class="requiredAlert" id="lNameAlert">
                     *Please fill this input before moving forward.*
@@ -103,8 +105,9 @@
                 </li>
                 <li class="formLi ctaFormLi flex">
                   <label for="playerDOB" class="formLabel ctaFormLabel"
-                    >Player Date of Birth</label
-                  >
+                    >Player Date of Birth
+                    <span class="requiredSpan">(required)</span>
+                  </label>
                   <p class="requiredAlert" id="dobAlert">
                     *Please fill this input before moving forward.*
                   </p>
@@ -116,7 +119,9 @@
                   />
                 </li>
                 <li class="formLi radioLi ctaFormLi flex">
-                  <p class="formLabel ctaFormLabel">Player Gender</p>
+                  <p class="formLabel ctaFormLabel">
+                    Player Gender <span class="requiredSpan">(required)</span>
+                  </p>
                   <p class="requiredAlert" id="genderAlert">
                     *Please fill this input before moving forward.*
                   </p>
@@ -179,8 +184,12 @@
               <ul class="formList noList flexColumn">
                 <li class="formLi ctaFormLi flex">
                   <label for="parentName" class="formLabel ctaFormLabel"
-                    >Parent/Guardian Contact Full Name</label
+                    >Parent/Guardian Contact Full Name
+                    <span class="requiredSpan">(required)</span></label
                   >
+                  <p class="requiredAlert" id="contactNameAlert">
+                    *Please fill this input before moving forward.*
+                  </p>
                   <input
                     type="text"
                     class="formInput ctaFormInput"
@@ -191,7 +200,13 @@
                   />
                 </li>
                 <li class="formLi radioLi ctaFormLi flex">
-                  <p class="formLabel ctaFormLabel">Relationship to Player</p>
+                  <p class="formLabel ctaFormLabel">
+                    Relationship to Player
+                    <span class="requiredSpan">(required)</span>
+                  </p>
+                  <p class="requiredAlert" id="relationshipAlert">
+                    *Please fill this input before moving forward.*
+                  </p>
                   <div class="radioContainer flex" role="radiogroup">
                     <input
                       type="radio"
@@ -287,8 +302,12 @@
                 </li>
                 <li class="formLi ctaFormLi flex">
                   <label for="playerEmail" class="formLabel ctaFormLabel"
-                    >Best Email to Contact</label
+                    >Best Email to Contact
+                    <span class="requiredSpan">(required)</span></label
                   >
+                  <p class="requiredAlert" id="emailAlert">
+                    *Please fill this input before moving forward.*
+                  </p>
                   <input
                     type="email"
                     class="formInput ctaFormInput"
@@ -318,7 +337,7 @@
                     type="text"
                     class="formInput ctaFormInput"
                     id="playerAddress"
-                    name="playerEmail"
+                    name="playerAddress"
                     placeholder="ex: 1235 W Lane St. #300, Canyon Country, CA 91351"
                     required
                   />
@@ -333,13 +352,16 @@
               <ul class="formList noList flexColumn">
                 <li class="formLi ctaFormLi flex">
                   <label for="parentName" class="formLabel ctaFormLabel"
-                    >Current Team</label
-                  >
+                    >Current Team <span class="requiredSpan">(required)</span>
+                  </label>
+                  <p class="requiredAlert" id="currTeamAlert">
+                    *Please fill this input before moving forward.*
+                  </p>
                   <input
                     type="text"
                     class="formInput ctaFormInput"
-                    id="parentName"
-                    name="parentName"
+                    id="currTeam"
+                    name="currTeam"
                     placeholder="ex: LAFC B2014 Gold"
                     required
                   />
@@ -347,6 +369,10 @@
                 <li class="formLi radioLi ctaFormLi flex">
                   <p class="formLabel ctaFormLabel">
                     Most accurate playing level
+                    <span class="requiredSpan">(required)</span>
+                  </p>
+                  <p class="requiredAlert" id="levelAlert">
+                    *Please fill this input before moving forward.*
                   </p>
                   <div
                     class="radioContainer levelRadioGroup flex"
@@ -745,7 +771,6 @@
                     class="formContactTextArea"
                     id="message"
                     placeholder="What can we help you with?"
-                    required
                   ></textarea>
                 </li>
               </ul>
