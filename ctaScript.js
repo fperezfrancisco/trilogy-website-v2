@@ -163,6 +163,6 @@ submitFormBtn.addEventListener("click", (e) => {
       "Curr Level: " +
         document.querySelector("input[name='playerLevel']:checked").value
     );
-    alert("Your form has been submitted! ");
+    window.location.href = "formSubmission.html";
   }
 });
