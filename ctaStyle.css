@@ -6,6 +6,10 @@
   row-gap: 2rem;
 }
 
+.mainCta .ctaTitle {
+  font-size: 2rem;
+}
+
 .ctaHeroSection {
   width: 100%;
   text-align: center;
@@ -77,8 +81,8 @@
 
 .ctaForm {
   width: 100%;
-  max-width: 650px;
-  padding: 1rem;
+  max-width: 450px;
+  padding: 0rem;
   row-gap: 2rem;
   align-items: center;
   justify-items: center;
@@ -128,7 +132,7 @@
   width: 100%;
   min-height: 500px;
   height: 100%;
-  padding: 1rem;
+  padding: 0.5rem;
   border-radius: 1rem;
   background-color: #fff;
   box-shadow: 0px 0px 20px rgba(64, 64, 64, 0.5);
@@ -140,7 +144,7 @@
   width: 100%;
   justify-items: center;
   row-gap: 1rem;
-  padding: 1rem;
+  padding: 0.25rem;
 }
 
 .formList {
@@ -167,6 +171,8 @@
 .ctaPage .radioContainer {
   column-gap: 1.5rem;
   padding: 1rem 0rem;
+  flex-wrap: wrap;
+  row-gap: 1rem;
 }
 
 .formRadioContainer {
@@ -297,4 +303,36 @@ label#labelOtherPosition:hover {
 
 .requiredAlert.active {
   display: block;
+}
+
+@media only screen and (min-width: 600px) {
+  .mainCta .ctaTitle {
+    font-size: 4.25rem;
+  }
+
+  .ctaForm {
+    width: 100%;
+    max-width: 650px;
+    padding: 1rem;
+    row-gap: 2rem;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .ctaFormBox {
+    width: 100%;
+    min-height: 500px;
+    height: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(64, 64, 64, 0.5);
+  }
+
+  .ctaPage {
+    width: 100%;
+    justify-items: center;
+    row-gap: 1rem;
+    padding: 1rem;
+  }
 }

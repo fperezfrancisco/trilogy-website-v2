@@ -617,7 +617,7 @@ video {
 }
 
 .logoFooterImg {
-  width: 300px;
+  width: 240px;
 }
 
 .socialsContainer {
@@ -1220,6 +1220,8 @@ body.headerColorChange header {
 
 /* CONTACT PAGE SECTION */
 
+/* */
+
 /* animations */
 @keyframes text-reveal {
   0% {
@@ -1285,6 +1287,10 @@ body.headerColorChange header {
   .staffContainer .copyContainer {
     width: 100%;
     max-width: 500px;
+  }
+
+  .logoFooterImg {
+    width: 300px;
   }
 }
 
