@@ -50,7 +50,16 @@
           </li>
         </ul>
         <span class="bookingBtnContainer flex">
-          <button class="pageBtn bookingBtn secondaryBtn">Booking Page</button>
+          <a
+            style="float: none"
+            target="_blank"
+            href="https://booking.setmore.com/scheduleappointment/f41e7e52-ff1f-473b-9092-0e1d7d29e512"
+            ><img
+              border="none"
+              src="https://storage.googleapis.com/full-assets/setmore/images/1.0/Settings/book-now-blue.svg"
+              alt="Book an appointment with Francisco J Perez using Setmore"
+              class="bookingBtnImg"
+          /></a>
         </span>
         <span class="mobileMenuContainer flex" id="menuOpenBtn">
           <i class="bx bx-menu"></i>
@@ -80,9 +89,15 @@
             </li>
           </ul>
           <span class="mobileBookingContainer flex">
-            <button class="pageBtn bookingBtn secondaryBtn">
-              Booking Page
-            </button>
+            <a
+              style="float: none"
+              target="_blank"
+              href="https://booking.setmore.com/scheduleappointment/f41e7e52-ff1f-473b-9092-0e1d7d29e512"
+              ><img
+                border="none"
+                src="https://storage.googleapis.com/full-assets/setmore/images/1.0/Settings/book-now-blue.svg"
+                alt="Book an appointment with Francisco J Perez using Setmore"
+            /></a>
           </span>
         </nav>
       </div>
@@ -110,7 +125,10 @@
             completing their onboarding process & purchasing their first session
             with us!]
           </p>
-          <button class="primaryBtn newPlayerBtn">
+          <button
+            class="primaryBtn newPlayerBtn"
+            onclick="window.location.href='newPlayerForm.html'"
+          >
             New Players Register Here
           </button>
         </div>
@@ -131,11 +149,12 @@
           <div class="plansBoxContainer grid">
             <div class="planBox flexColumn">
               <div class="planPrice">$125</div>
-              <h3 class="planTitle">1-Month Plan</h3>
+              <h3 class="planTitle">4-Session Bundle</h3>
               <p class="finePrint planSavings">You save $15</p>
               <ul class="planItems flexColumn">
                 <li class="planLi">
-                  Access to ALL Open Group sessions for the duration of 1-month
+                  Access to 4 Open Group sessions (valid up to 3-months after
+                  purchase)
                 </li>
                 <li class="planLi">
                   Must still enroll and confirm attendance to group sessions on
@@ -148,12 +167,13 @@
               <button class="primaryBtn purchaseBtn">Purchase Plan</button>
             </div>
             <div class="planBox flexColumn">
-              <div class="planPrice">$350</div>
-              <h3 class="planTitle">3-Month Plan</h3>
-              <p class="finePrint planSavings">You save $70</p>
+              <div class="planPrice">$225</div>
+              <h3 class="planTitle">8-session bundle</h3>
+              <p class="finePrint planSavings">You save $55</p>
               <ul class="planItems flexColumn">
                 <li class="planLi">
-                  Access to ALL Open Group sessions for the duration of 3-months
+                  Access to 8 Open Group sessions (valid up to 4-months after
+                  purchase)
                 </li>
                 <li class="planLi">
                   Must still enroll and confirm attendance to group sessions on
@@ -166,12 +186,13 @@
               <button class="primaryBtn purchaseBtn">Purchase Plan</button>
             </div>
             <div class="planBox flexColumn">
-              <div class="planPrice">$600</div>
-              <h3 class="planTitle">6-Month Plan</h3>
-              <p class="finePrint planSavings">You save $240</p>
+              <div class="planPrice">$270</div>
+              <h3 class="planTitle">12-session bundle</h3>
+              <p class="finePrint planSavings">You save $150</p>
               <ul class="planItems flexColumn">
                 <li class="planLi">
-                  Access to ALL Open Group sessions for the duration 6-months
+                  Access to 12 Open Group sessions (valid up to 6-months after
+                  purchase)
                 </li>
                 <li class="planLi">
                   Must still enroll and confirm attendance to group sessions on
@@ -185,7 +206,11 @@
             </div>
           </div>
         </div>
-        <div class="planContainer grid" id="eliteGroupPlan">
+        <div
+          class="planContainer grid"
+          id="eliteGroupPlan"
+          style="display: none"
+        >
           <h2 class="sectionTitle planBoxTitle">
             <span class="priceTagTitle">$45</span>
             Elite Group Training
@@ -274,16 +299,17 @@
           ></a>
           <div class="plansBoxContainer grid">
             <div class="planBox flexColumn">
-              <div class="planPrice">$450</div>
+              <div class="planPrice">$300</div>
               <h3 class="planTitle">Basic Plan</h3>
-              <p class="finePrint planSavings">You save $30</p>
+              <p class="finePrint planSavings">You save $20</p>
               <ul class="planItems flexColumn">
                 <li class="planLi">
-                  Access to ALL Open Group sessions for the duration of 1-month
+                  4 Private Training Sessions (valid up to 6-months after
+                  purchase)
                 </li>
                 <li class="planLi">
-                  Must still enroll and confirm attendance to group sessions on
-                  booking app
+                  Must set up sessions through the booking app or with one of
+                  our staff members
                 </li>
                 <li class="planLi">
                   Cannot be transferred or used by other players
@@ -294,14 +320,15 @@
             <div class="planBox flexColumn">
               <div class="planPrice">$575</div>
               <h3 class="planTitle">Pro Plan</h3>
-              <p class="finePrint planSavings">You save $70</p>
+              <p class="finePrint planSavings">You save $65</p>
               <ul class="planItems flexColumn">
                 <li class="planLi">
-                  Access to ALL Open Group sessions for the duration of 3-months
+                  8 Private Training Sessions (valid up to 6-months after
+                  purchase)
                 </li>
                 <li class="planLi">
-                  Must still enroll and confirm attendance to group sessions on
-                  booking app
+                  Must set up sessions through the booking app or with one of
+                  our staff members
                 </li>
                 <li class="planLi">
                   Cannot be transferred or used by other players
@@ -310,16 +337,17 @@
               <button class="primaryBtn purchaseBtn">Purchase Plan</button>
             </div>
             <div class="planBox flexColumn">
-              <div class="planPrice">$650</div>
+              <div class="planPrice">$800</div>
               <h3 class="planTitle">Premium Plan</h3>
-              <p class="finePrint planSavings">You save $240</p>
+              <p class="finePrint planSavings">You save $160</p>
               <ul class="planItems flexColumn">
                 <li class="planLi">
-                  Access to ALL Open Group sessions for the duration 6-months
+                  12 Private Training Sessions (valid up to 6-months after
+                  purchase)
                 </li>
                 <li class="planLi">
-                  Must still enroll and confirm attendance to group sessions on
-                  booking app
+                  Must set up sessions through the booking app or with one of
+                  our staff members
                 </li>
                 <li class="planLi">
                   Cannot be transferred or used by other players
