@@ -980,6 +980,19 @@ body.headerColorChange header {
   align-content: flex-start;
 }
 
+.trainingServiceBox .copyContainer .programList {
+  width: 100%;
+  row-gap: 0.5rem;
+  padding-left: 2rem;
+  margin-left: 1rem;
+  font-weight: 300;
+}
+
+.programList li:before {
+  content: "\ffed";
+  margin-right: 0.5em;
+}
+
 .trainingServiceBox .buttonContainer {
   padding-top: 1rem;
   gap: 1rem;
@@ -1716,6 +1729,11 @@ body.headerColorChange header {
 
   .philosophySection .sectionPara {
     max-width: 600px;
+  }
+
+  .philosophyImageContainer {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
   }
 
   .serviceTitle {
