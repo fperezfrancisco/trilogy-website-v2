@@ -339,7 +339,7 @@ video {
   height: 100%;
 }
 
-.heroImgContainer {
+.homeMain .heroImgContainer {
   display: none;
   aspect-ratio: 4 / 5;
   width: 100%;
@@ -1135,6 +1135,7 @@ body.headerColorChange header {
 
 .heroAboutSection .heroImgContainer {
   background-image: url("images/trilogy-coaches.jpg");
+  width: 100%;
   background-size: cover;
   background-position: center;
 }
@@ -1225,6 +1226,11 @@ body.headerColorChange header {
 
 .staffContainer .copyContainer .sectionPara {
   line-height: 1.5;
+}
+
+.aboutMain .ctaSection,
+.aboutMain .ourTeamSection {
+  display: none;
 }
 
 /* ABOUT PAGE SECTION */
