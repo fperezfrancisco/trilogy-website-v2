@@ -117,7 +117,7 @@
             back to you as soon as possible. Thank you!
           </p>
         </div>
-        <form action="post" class="contactForm" name="contactForm">
+        <form class="contactForm" name="contactForm" id="contactForm">
           <ul class="contactFormList noList flexColumn">
             <li class="contactLi flexColumn">
               <label for="name" class="formContactLabel">Name</label>
@@ -125,6 +125,7 @@
                 type="text"
                 class="formContactInput"
                 id="name"
+                name="name"
                 placeholder="Your name..."
                 required
               />
@@ -134,6 +135,7 @@
               <input
                 type="email"
                 class="formContactInput"
+                name="email"
                 id="email"
                 placeholder="Your email..."
                 required
@@ -147,6 +149,7 @@
                 type="tel"
                 class="formContactInput"
                 id="phoneNumber"
+                name="phoneNumber"
                 placeholder="Your phone number..."
               />
             </li>
@@ -158,6 +161,7 @@
                 class="formContactTextArea"
                 id="message"
                 placeholder="What can we help you with?"
+                name="message"
                 required
               ></textarea>
             </li>
@@ -227,5 +231,21 @@
       </div>
     </footer>
     <script src="script.js"></script>
+    <script>
+      const form = document.querySelector("#contactForm");
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbydc8-rJfngcNOZw74EgjRB93FviOrR5eNlCF6EAWweAyjSkHc_BHewjaUm0K4X9WGT1A/exec";
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        console.log(form);
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            alert("Success!", response);
+          })
+          .catch((error) => alert("Error!", error.message));
+      });
+    </script>
   </body>
 </html>
