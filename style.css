@@ -412,7 +412,7 @@ video {
   aspect-ratio: 3 / 2;
   grid-row: 3;
   grid-column: 1 / -1;
-  background-image: url("images/elite-group-march.png");
+  background-image: url("images/elite-group-SMALL-march-min.png");
   background-size: cover;
   background-position: center;
 }
@@ -429,11 +429,11 @@ video {
 }
 
 #smallFirst {
-  background-image: url("images/narai-pic.png");
+  background-image: url("images/narai-pic-min-SMALL.png");
 }
 
 #smallSecond {
-  background-image: url("images/trilogy-poles.png");
+  background-image: url("images/trilogy-poles-SMALL-min.png");
 }
 
 .proofSection .copyContainer {
@@ -1139,7 +1139,7 @@ body.headerColorChange header {
 }
 
 .heroAboutSection .heroImgContainer {
-  background-image: url("images/trilogy-coaches.jpg");
+  background-image: url("images/trilogy-coaches-min.jpg");
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -1488,6 +1488,20 @@ body.headerColorChange header {
     font-weight: 500;
     letter-spacing: 1px;
     font-size: 1rem;
+  }
+
+  /*review section */
+
+  .wideBoxPic {
+    background-image: url("images/elite-group-march-min.png");
+  }
+
+  #smallFirst {
+    background-image: url("images/narai-pic-min.png");
+  }
+
+  #smallSecond {
+    background-image: url("images/trilogy-poles-min.png");
   }
 
   .reviewBtn {
