@@ -91,6 +91,11 @@ button {
   background-color: hsl(0, 0%, 80%);
 }
 
+.reviewBtn {
+  width: 100%;
+  align-self: center;
+}
+
 .flex {
   display: flex;
 }
@@ -1483,6 +1488,11 @@ body.headerColorChange header {
     font-weight: 500;
     letter-spacing: 1px;
     font-size: 1rem;
+  }
+
+  .reviewBtn {
+    width: 100%;
+    align-self: unset;
   }
 
   .heroImgContainer {
