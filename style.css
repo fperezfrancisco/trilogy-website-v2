@@ -1326,6 +1326,22 @@ body.headerColorChange header {
   overflow: hidden;
 }
 
+#eliteCampsBox {
+  background-image: url("images/elite-group-SMALL-march-min.png");
+}
+
+#eliteCampsBox .overlay {
+  opacity: 0.5;
+}
+
+#summerCampsBox {
+  background-image: url("images/larger-group.jpg");
+}
+
+#summerCampsBox .overlay {
+  opacity: 0.5;
+}
+
 .preseasonHero .overlay {
   background-color: #000;
   opacity: 0.3;
