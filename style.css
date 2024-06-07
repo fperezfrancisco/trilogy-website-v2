@@ -480,7 +480,7 @@ video {
 
 .programsContainer {
   width: 100%;
-  max-width: 350px;
+  max-width: 450px;
   padding: 1rem;
   gap: 2rem;
   align-items: center;
@@ -489,7 +489,7 @@ video {
 
 .programBox {
   width: 100%;
-  max-width: 300px;
+  max-width: 400px;
   padding: 0.5rem;
   row-gap: 1.5rem;
   align-items: center;
@@ -499,7 +499,7 @@ video {
   aspect-ratio: 1 / 1.25;
   width: 100%;
   height: auto;
-  max-width: 300px;
+  max-width: 400px;
   border-radius: 0.75rem;
   object-fit: cover;
   object-position: top center;
@@ -513,6 +513,11 @@ video {
   width: 100%;
   flex-direction: column;
   row-gap: 0.5rem;
+}
+
+.buttonContainer button {
+  width: 100%;
+  max-width: 450px;
 }
 
 /* FEATURE PROGRAMS SECTION MOBILE*/
@@ -1616,6 +1621,58 @@ body.headerColorChange header {
   .mobileMenuContainer {
     display: none;
   }
+
+  /* FEATURE PROGRAMS SECTION MOBILE*/
+
+  .featurePrograms {
+    row-gap: 3rem;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .featureTitle {
+    text-align: center;
+  }
+
+  .programsContainer {
+    width: 100%;
+    max-width: 750px;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .programBox {
+    width: 100%;
+    max-width: 300px;
+    padding: 0.5rem;
+    row-gap: 1.5rem;
+    align-items: center;
+  }
+
+  .programImgSmall {
+    aspect-ratio: 1 / 1.25;
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    border-radius: 0.75rem;
+    object-fit: cover;
+    object-position: top center;
+  }
+
+  #prodigyImg {
+    object-position: top center;
+  }
+
+  .buttonContainer {
+    width: 100%;
+    flex-direction: column;
+    row-gap: 0.5rem;
+  }
+
+  /* FEATURE PROGRAMS SECTION MOBILE*/
 
   /* main section */
 
