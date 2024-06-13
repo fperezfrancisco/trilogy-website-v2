@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Box Icon Link -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,500;0,700;0,900;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Trilogy Soccer | Prodigy Program Page | Santa Clarita, CA</title>
+  </head>
+  <body>
+    <header class="mainHeader homeHeader preseasonHeader flex">
+      <span class="logoContainer flex">
+        <a class="headerLink logoLink flex" href="index.html">
+          <img
+            class="logoImg"
+            title="Trilogy Soccer"
+            alt="Trilogy Soccer Logo"
+            src="images/trilogy logo soccer training logo transparent.png"
+          />
+        </a>
+      </span>
+      <nav class="mainNav flex">
+        <ul class="navList desktopNavList flex noList">
+          <li class="navLi flex desktopLi">
+            <a href="training-services.html" class="navLink flex"
+              >Training Services</a
+            >
+          </li>
+          <li class="navLi flex desktopLi">
+            <a href="pricing-plans.html" class="navLink flex"
+              >Pricing & Plans</a
+            >
+          </li>
+          <li class="navLi flex desktopLi">
+            <a href="about.html" class="navLink flex">About Us</a>
+          </li>
+          <li class="navLi flex desktopLi">
+            <a href="contact.html" class="navLink flex">Contact Us</a>
+          </li>
+        </ul>
+        <!----
+          <span class="bookingBtnContainer flex">
+            <a
+              style="float: none"
+              target="_blank"
+              href="https://booking.setmore.com/scheduleappointment/f41e7e52-ff1f-473b-9092-0e1d7d29e512"
+              ><img
+                border="none"
+                src="https://storage.googleapis.com/full-assets/setmore/images/1.0/Settings/book-now-blue.svg"
+                alt="Book an appointment with Francisco J Perez using Setmore"
+                class="bookingBtnImg"
+            /></a>
+          </span>-->
+        <span class="mobileMenuContainer flex" id="menuOpenBtn">
+          <i class="bx bx-menu"></i>
+        </span>
+      </nav>
+      <div class="mobileMenu" id="mobileMenu">
+        <nav class="mobileNav flexColumn">
+          <div class="closeContainer flex" id="closeMenuBtn">
+            <i class="bx bx-arrow-back"></i>
+          </div>
+          <ul class="mobileNavList noList flexColumn">
+            <li class="navLi flex mobileLi">
+              <a href="training-services.html" class="navLink flex"
+                >Training Services</a
+              >
+            </li>
+            <li class="navLi flex mobileLi">
+              <a href="pricing-plans.html" class="navLink flex"
+                >Pricing & Plans</a
+              >
+            </li>
+            <li class="navLi flex mobileLi">
+              <a href="about.html" class="navLink flex">About Us</a>
+            </li>
+            <li class="navLi flex mobileLi">
+              <a href="contact.html" class="navLink flex">Contact Us</a>
+            </li>
+          </ul>
+          <!----
+            <span class="mobileBookingContainer flex">
+              <a
+                style="float: none"
+                target="_blank"
+                href="https://booking.setmore.com/scheduleappointment/f41e7e52-ff1f-473b-9092-0e1d7d29e512"
+                ><img
+                  border="none"
+                  src="https://storage.googleapis.com/full-assets/setmore/images/1.0/Settings/book-now-blue.svg"
+                  alt="Book an appointment with Francisco J Perez using Setmore"
+              /></a>
+            </span>-->
+        </nav>
+      </div>
+    </header>
+    <main class="mainSection prodigyMain grid">
+      <section class="heroSection prodigyHero grid">
+        <div class="heroCopy prodigyHeroCopy flex">
+          <div class="heading flexColumn heroTitles">
+            <h2 class="subTitle prodigySubtitle">Introducing our</h2>
+            <h1 class="mainTitle prodigyTitle">Prodigy Program</h1>
+          </div>
+          <p class="sectionPara prodigyPara">
+            Introducing our Prodigy Program: a 6-week training for ages 6-9 to
+            develop fundamental soccer skills and become more competitive. Focus
+            areas include dribbling, passing, receiving, and finishing, along
+            with balance and agility. Join us to elevate your child's game!
+          </p>
+          <button
+            class="pageBtn primaryBtn heroBtn preseasonBtn"
+            onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSckLi_TGoO94xSH7hd73LAwENBqxe_yDDMaaOvFpBQ4ZwFqBg/viewform', '_blank')"
+          >
+            Register Now
+          </button>
+        </div>
+        <div class="prodigyHeroArtContainer flex">
+          <img
+            src="images/trilogy-poles-min.png"
+            alt="Trilogy youth athletes changing direction at the yellow pole"
+            class="prodigyHeroImg"
+          />
+        </div>
+      </section>
+      <section class="pageSection grid prodigyOverviewSection">
+        <section class="pageSection introProdigySection grid">
+          <div class="artContainer flex" id="overviewImgContainer">
+            <img
+              src="images/small-trilogy.jpeg"
+              alt="trilogy youth athletes"
+              id="smallTrilogyAthletesImg"
+            />
+          </div>
+          <div class="copyContainer flexColumn">
+            <h3 class="subtitleProdigy">Program Overview</h3>
+            <h2 class="sectionTitle">Why choose our prodigy program?</h2>
+            <p class="sectionPara">
+              Our Prodigy Program is designed to transform recreational and
+              youth soccer players into more competitive athletes. Over six
+              weeks, your child will focus on essential skills like dribbling,
+              passing, receiving, and finishing, as well as soccer-specific
+              physical motor skills like balance and agility. With quality
+              coaches, top-notch organization, and a player-centric training
+              environment, we quickly prepare players for their soccer journey
+              ahead.
+            </p>
+          </div>
+        </section>
+        <section class="pageSection benefitsProdigySection grid">
+          <div class="copyContainer flexColumn">
+            <h2 class="sectionTitle">Program Benefits</h2>
+            <ul class="benefitsUl flexColumn programList">
+              <li class="benefitsli programLi flex">
+                Consistent training program and environment that allows youth
+                players to progressively learn and develop
+              </li>
+              <li class="benefitsli flex">
+                Mastery of individual technical soccer skills - passing,
+                receiving, & dribbling
+              </li>
+              <li class="benefitsli flex">
+                Mastery of individual physical abilities - speed, agility,
+                balance, and quickness
+              </li>
+              <li class="benefitsli flex">
+                Professional soccer coaches & trainers with multiple years of
+                experience at the club, academy, and collegiate level
+              </li>
+              <li class="benefitsli flex">
+                Extra attention and a proper training plan that helps players
+                advance quicker than only training on a recreational team or
+                club
+              </li>
+              <li class="benefitsli flex">
+                An environment that is professional, organized, and challenging
+                to the athlete
+              </li>
+              <li class="benefitsli flex">
+                A safe and engaging environment that puts players first
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="pageSection benefitsProdigySection grid">
+          <div class="copyContainer flexColumn">
+            <h2 class="sectionTitle">Program Details</h2>
+            <ul class="benefitsUl flexColumn programList">
+              <li class="benefitsli programLi flex">
+                <strong>Program Dates: </strong> <br />
+                Mondays from July 8th - August 12th
+              </li>
+              <li class="benefitsli programLi flex">
+                <strong>Schedule: </strong> <br />
+                Players ages 6-7: Mondays 5:30pm-6:30pm <br />
+                Players ages 8-9: Mondays 6:30pm-7:30pm
+              </li>
+              <li class="benefitsli programLi flex">
+                <strong>Location: </strong> <br />
+                Field location will be confirmed the week before the program
+                starts and will be in Santa Clarita, CA.
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="pageSection benefitsProdigySection grid">
+          <div class="copyContainer flexColumn">
+            <h2 class="sectionTitle">Pricing & Registration</h2>
+            <div class="pricingBox grid">
+              <div class="priceBox flexColumn" id="four-week-box">
+                <span class="price">$125</span>
+                <span class="priceDetails">4 weeks of the Program</span>
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSckLi_TGoO94xSH7hd73LAwENBqxe_yDDMaaOvFpBQ4ZwFqBg/viewform"
+                  class="priceLink"
+                  >Register Now</a
+                >
+              </div>
+              <div class="priceBox flexColumn" id="six-week-box">
+                <span class="price">$150</span>
+                <span class="priceDetails">6 weeks of the Program</span>
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSckLi_TGoO94xSH7hd73LAwENBqxe_yDDMaaOvFpBQ4ZwFqBg/viewform"
+                  class="priceLink"
+                  >Register Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="pageSection grid ctaSection">
+        <div class="copyContainer flexColumn">
+          <h2 class="sectionTitle">
+            Ready to take your game to the Next Level?
+          </h2>
+          <p class="sectionPara">
+            Don’t wait to sign up and reserve your spot today. Spots are limited
+            based on ages and a proper coach-to-player ratio. Ask about our
+            sibling discount or referral discount for more savings!
+          </p>
+          <button
+            class="pageBtn primaryBtn heroBtn preseasonBtn"
+            onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSckLi_TGoO94xSH7hd73LAwENBqxe_yDDMaaOvFpBQ4ZwFqBg/viewform', '_blank')"
+          >
+            Register Now
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="mainFooter grid">
+      <div class="logoSectionFooter flexColumn">
+        <img class="logoFooterImg" src="images/trilogy logo original.png" />
+        <div class="socialsContainer flex">
+          <span class="socialContainer flex">
+            <a
+              href="https://www.instagram.com/trilogysoccer"
+              target="_blank"
+              class="socialLink"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+          </span>
+          <span class="socialContainer flex">
+            <a
+              href="https://www.tiktok.com/@trilogysoccer"
+              target="_blank"
+              class="socialLink"
+              ><i class="bx bxl-tiktok"></i
+            ></a>
+          </span>
+          <span class="socialContainer flex">
+            <a
+              href="https://www.youtube.com/@trilogysoccer"
+              target="_blank"
+              class="socialLink"
+              ><i class="bx bxl-youtube"></i
+            ></a>
+          </span>
+          <span class="socialContainer flex">
+            <a
+              href="mailto:trilogysoccertraining@gmail.com"
+              target="_blank"
+              class="socialLink"
+              ><i class="bx bxl-gmail"></i
+            ></a>
+          </span>
+        </div>
+      </div>
+      <div class="subscribeFooterContainer flexColumn">
+        <h2 class="sectionTitle">Stay up to date with Trilogy Soccer</h2>
+        <p class="sectionPara">
+          Subscribe to our newsletter so you never miss an update, camp, or
+          special events we have throughout the year. Submit your email and
+          you’ll be all set!
+        </p>
+        <form
+          name="subscriberForm"
+          class="subscribeForm flexColumn"
+          method="POST"
+          data-netlify="true"
+        >
+          <input
+            name="subscribeEmail"
+            class="subscribeInput"
+            placeholder="Email..."
+            type="email"
+            required
+          />
+          <button class="formBtn secondaryBtn" type="submit">Subscribe</button>
+        </form>
+      </div>
+      <div class="hrFooter"></div>
+      <div class="authorContainer flex">
+        <a class="authorLink" href="#"
+          >Website Design & Development by Francisco J. Perez</a
+        >
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
